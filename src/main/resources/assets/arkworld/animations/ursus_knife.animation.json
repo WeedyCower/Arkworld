@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ursus_knife.attack": {
+			"animation_length": 0.6,
+			"bones": {
+				"d": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.3": [50, -25, 0],
+						"0.6": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

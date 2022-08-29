@@ -1,0 +1,811 @@
+{
+  "frostnova_first_bgm": {
+    "sounds": [
+      {
+        "name": "arkworld:bgm/frostnova_first_bgm",
+        "stream": true
+      }
+    ]
+  },
+  "frostnova_second_bgm": {
+    "sounds": [
+      {
+        "name": "arkworld:bgm/frostnova_second_bgm",
+        "stream": true
+      }
+    ]
+  },
+  "frostnova_skill_first": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/frostnova_skill_first",
+        "stream": true
+      }
+    ]
+  },
+  "frostnova_skill_second": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/frostnova_skill_second",
+        "stream": true
+      }
+    ]
+  },
+  "frostnova_transformation": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/frostnova_transformation",
+        "stream": true
+      }
+    ]
+  },
+  "frostnova_second_spawn": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/frostnova_second_spawn",
+        "stream": true
+      }
+    ]
+  },
+
+  "frostnova_death_bgm": {
+    "sounds": [
+      {
+        "name": "arkworld:bgm/frostnova_death_bgm",
+        "stream": true
+      }
+    ]
+  },
+  "patriot_first_bgm": {
+    "sounds": [
+      {
+        "name": "arkworld:bgm/patriot_first_bgm",
+        "stream": true
+      }
+    ]
+  },
+  "patriot_second_bgm": {
+    "sounds": [
+      {
+        "name": "arkworld:bgm/patriot_second_bgm",
+        "stream": true
+      }
+    ]
+  },
+  "patriot_death_bgm": {
+    "sounds": [
+      {
+        "name": "arkworld:bgm/patriot_death_bgm",
+        "stream": true
+      }
+    ]
+  },
+  "patriot_resurrection_spawn": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/patriot_resurrection_spawn",
+        "stream": true
+      }
+    ]
+  },
+  "patriot_sencond_spawn": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/patriot_sencond_spawn",
+        "stream": true
+      }
+    ]
+  },
+  "w_countdown": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/w_countdown",
+        "stream": true
+      }
+    ]
+  },
+  "w_explode": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/w_explode",
+        "stream": true
+      }
+    ]
+  },
+  "mayfest_singer_first_bgm": {
+    "sounds": [
+      {
+        "name": "arkworld:bgm/mayfest_singer_first_bgm",
+        "stream": true
+      }
+    ]
+  },
+  "mayfest_singer_second_bgm": {
+    "sounds": [
+      {
+        "name": "arkworld:bgm/mayfest_singer_second_bgm",
+        "stream": true
+      }
+    ]
+  },
+  "faust_attack": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/faust_attack",
+        "stream": true
+      }
+    ]
+  },
+  "faust_skill": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/faust_skill",
+        "stream": true
+      }
+    ]
+  },
+  "faust_bgm": {
+    "sounds": [
+      {
+        "name": "arkworld:bgm/faust_bgm",
+        "stream": true
+      }
+    ]
+  },
+  "talulah_first_bgm": {
+    "sounds": [
+      {
+        "name": "arkworld:bgm/talulah_first_bgm",
+        "stream": true
+      }
+    ]
+  },
+  "talulah_second_bgm": {
+    "sounds": [
+      {
+        "name": "arkworld:bgm/talulah_second_bgm",
+        "stream": true
+      }
+    ]
+  },
+  "damedane": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/damedane",
+        "stream": true
+      }
+    ]
+  },
+  "cc": {
+    "sounds": [
+      {
+        "name": "arkworld:music/cc",
+        "stream": true
+      }
+    ]
+  },
+  "mayfest_singer_attack": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/mayfest_singer_attack",
+        "stream": true
+      }
+    ]
+  },
+  "mayfest_singer_skill": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/mayfest_singer_skill",
+        "stream": true
+      }
+    ]
+  },
+  "talulah_attack": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/talulah_attack",
+        "stream": true
+      }
+    ]
+  },
+  "talulah_skill": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/talulah_skill",
+        "stream": true
+      }
+    ]
+  },
+  "mayfest_skill": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/mayfest_skill",
+        "stream": true
+      }
+    ]
+  },
+  "skullshatterer_bgm": {
+    "sounds": [
+      {
+        "name": "arkworld:bgm/skullshatterer_bgm",
+        "stream": true
+      }
+    ]
+  },
+  "amiya_interact_i": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/amiya_interact_i",
+        "stream": true
+      }
+    ]
+  },
+  "amiya_interact_ii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/amiya_interact_ii",
+        "stream": true
+      }
+    ]
+  },
+  "amiya_interact_iii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/amiya_interact_iii",
+        "stream": true
+      }
+    ]
+  },
+  "amiya_interact_iv": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/amiya_interact_iv",
+        "stream": true
+      }
+    ]
+  },
+  "amiya_fight_i": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/amiya_fight_i",
+        "stream": true
+      }
+    ]
+  },
+  "amiya_fight_ii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/amiya_fight_ii",
+        "stream": true
+      }
+    ]
+  },
+  "amiya_fight_iii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/amiya_fight_iii",
+        "stream": true
+      }
+    ]
+  },
+  "amiya_fight_iv": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/amiya_fight_iv",
+        "stream": true
+      }
+    ]
+  },
+  "amiya_idle_i": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/amiya_idle_i",
+        "stream": true
+      }
+    ]
+  },
+  "amiya_idle_ii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/amiya_idle_ii",
+        "stream": true
+      }
+    ]
+  },
+  "amiya_idle_iii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/amiya_idle_iii",
+        "stream": true
+      }
+    ]
+  },
+  "amiya_idle_iv": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/amiya_idle_iv",
+        "stream": true
+      }
+    ]
+  },
+  "queen_death": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/queen_death",
+        "stream": true
+      }
+    ]
+  },
+  "queen_hurt": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/queen_hurt",
+        "stream": true
+      }
+    ]
+  },
+  "queen_living_i": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/queen_living_i",
+        "stream": true
+      }
+    ]
+  },
+  "queen_living_ii": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/queen_living_ii",
+        "stream": true
+      }
+    ]
+  },
+  "hydralisk_death": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/hydralisk_death",
+        "stream": true
+      }
+    ]
+  },
+  "hydralisk_hurt": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/hydralisk_hurt",
+        "stream": true
+      }
+    ]
+  },
+  "hydralisk_living_i": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/hydralisk_living_i",
+        "stream": true
+      }
+    ]
+  },
+  "hydralisk_living_ii": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/hydralisk_living_ii",
+        "stream": true
+      }
+    ]
+  },
+  "hydralisk_living_iii": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/hydralisk_living_iii",
+        "stream": true
+      }
+    ]
+  },
+  "hydralisk_living_iv": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/hydralisk_living_iv",
+        "stream": true
+      }
+    ]
+  },
+  "zergling_death": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/zergling_death",
+        "stream": true
+      }
+    ]
+  },
+  "zergling_hurt": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/zergling_hurt",
+        "stream": true
+      }
+    ]
+  },
+  "zergling_living_i": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/zergling_living_i",
+        "stream": true
+      }
+    ]
+  },
+  "zergling_living_ii": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/zergling_living_ii",
+        "stream": true
+      }
+    ]
+  },
+  "zergling_living_iii": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/zergling_living_iii",
+        "stream": true
+      }
+    ]
+  },
+  "zergling_living_iv": {
+    "sounds": [
+      {
+        "name": "arkworld:mob/zergling_living_iv",
+        "stream": true
+      }
+    ]
+  },
+  "operator_place": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/operator_place",
+        "stream": true
+      }
+    ]
+  },
+  "amiya_attack": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/amiya_attack",
+        "stream": true
+      }
+    ]
+  },
+  "operator_skill_start": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/operator_skill_start",
+        "stream": true
+      }
+    ]
+  },
+  "amiya_skill_ii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/amiya_skill_ii",
+        "stream": true
+      }
+    ]
+  },
+  "operator_death": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/operator_death",
+        "stream": true
+      }
+    ]
+  },
+  "surtr_attack": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/surtr_attack",
+        "stream": true
+      }
+    ]
+  },
+  "surtr_skill_iii_start": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/surtr_skill_iii_start",
+        "stream": true
+      }
+    ]
+  },
+  "surtr_skill_iii_attack": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/surtr_skill_iii_attack",
+        "stream": true
+      }
+    ]
+  },
+  "surtr_interact_i": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/surtr_interact_i",
+        "stream": true
+      }
+    ]
+  },
+  "surtr_interact_ii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/surtr_interact_ii",
+        "stream": true
+      }
+    ]
+  },
+  "surtr_interact_iii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/surtr_interact_iii",
+        "stream": true
+      }
+    ]
+  },
+  "surtr_interact_iv": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/surtr_interact_iv",
+        "stream": true
+      }
+    ]
+  },
+  "surtr_fight_i": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/surtr_fight_i",
+        "stream": true
+      }
+    ]
+  },
+  "surtr_fight_ii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/surtr_fight_ii",
+        "stream": true
+      }
+    ]
+  },
+  "surtr_fight_iii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/surtr_fight_iii",
+        "stream": true
+      }
+    ]
+  },
+  "surtr_fight_iv": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/surtr_fight_iv",
+        "stream": true
+      }
+    ]
+  },
+  "surtr_idle_i": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/surtr_idle_i",
+        "stream": true
+      }
+    ]
+  },
+  "surtr_idle_ii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/surtr_idle_ii",
+        "stream": true
+      }
+    ]
+  },
+  "surtr_idle_iii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/surtr_idle_iii",
+        "stream": true
+      }
+    ]
+  },
+  "surtr_idle_iv": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/surtr_idle_iv",
+        "stream": true
+      }
+    ]
+  },
+  "purestream_idle_i": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/purestream_idle_i",
+        "stream": true
+      }
+    ]
+  },
+  "purestream_idle_ii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/purestream_idle_ii",
+        "stream": true
+      }
+    ]
+  },
+  "purestream_idle_iii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/purestream_idle_iii",
+        "stream": true
+      }
+    ]
+  },
+  "purestream_idle_iv": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/purestream_idle_iv",
+        "stream": true
+      }
+    ]
+  },
+  "purestream_interact_i": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/purestream_interact_i",
+        "stream": true
+      }
+    ]
+  },
+  "purestream_interact_ii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/purestream_interact_ii",
+        "stream": true
+      }
+    ]
+  },
+  "purestream_interact_iii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/purestream_interact_iii",
+        "stream": true
+      }
+    ]
+  },
+  "purestream_interact_iv": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/purestream_interact_iv",
+        "stream": true
+      }
+    ]
+  },
+  "purestream_fight_i": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/purestream_fight_i",
+        "stream": true
+      }
+    ]
+  },
+  "purestream_fight_ii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/purestream_fight_ii",
+        "stream": true
+      }
+    ]
+  },
+  "purestream_fight_iii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/purestream_fight_iii",
+        "stream": true
+      }
+    ]
+  },
+  "purestream_fight_iv": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/purestream_fight_iv",
+        "stream": true
+      }
+    ]
+  },
+  "w_idle_i": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/w_idle_i",
+        "stream": true
+      }
+    ]
+  },
+  "w_idle_ii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/w_idle_ii",
+        "stream": true
+      }
+    ]
+  },
+  "w_idle_iii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/w_idle_iii",
+        "stream": true
+      }
+    ]
+  },
+  "w_idle_iv": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/w_idle_iv",
+        "stream": true
+      }
+    ]
+  },
+  "w_fight_i": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/w_fight_i",
+        "stream": true
+      }
+    ]
+  },
+  "w_fight_ii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/w_fight_ii",
+        "stream": true
+      }
+    ]
+  },
+  "w_fight_iii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/w_fight_iii",
+        "stream": true
+      }
+    ]
+  },
+  "w_fight_iv": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/w_fight_iv",
+        "stream": true
+      }
+    ]
+  },
+  "w_interact_i": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/w_interact_i",
+        "stream": true
+      }
+    ]
+  },
+  "w_interact_ii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/w_interact_ii",
+        "stream": true
+      }
+    ]
+  },
+  "w_interact_iii": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/w_interact_iii",
+        "stream": true
+      }
+    ]
+  },
+  "w_interact_iv": {
+    "sounds": [
+      {
+        "name": "arkworld:operator/w_interact_iv",
+        "stream": true
+      }
+    ]
+  }
+}

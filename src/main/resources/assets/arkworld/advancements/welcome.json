@@ -1,0 +1,29 @@
+{
+  "display": {
+    "background": "arkworld:textures/blocks/tala_stone.png",
+    "icon": {
+      "item": "arkworld:my_info"
+    },
+    "title": {
+      "translate": "advancements.first_entry.title"
+    },
+    "description": {
+      "translate": "advancements.first_entry.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {}
+    }
+  },
+  "rewards": {
+    "loot": [
+      "arkworld:grant_book_on_first_join"
+    ]
+  }
+}

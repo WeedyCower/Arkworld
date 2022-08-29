@@ -1,0 +1,6 @@
+{
+  "parent": "arkworld:custom/bomb",
+  "textures": {
+    "0": "arkworld:entities/bomb"
+  }
+}

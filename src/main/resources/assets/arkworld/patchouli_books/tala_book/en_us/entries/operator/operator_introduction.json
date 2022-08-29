@@ -1,0 +1,38 @@
+{
+  "sortnum": 0,
+  "name": "干员介绍",
+  "icon": "minecraft:paper",
+  "category": "operator",
+  "pages": [
+    {
+      "type": "text",
+      "text": "干员由干员寻访箱抽取，获得干员召唤物后右键召唤干员并制定干员主人。干员升级，潜能，精英化与原版一样。$(br2)干员放置需要相当于其部署费用的理智，干员技能条满后右击召唤物开启技能，干员死后自动回到召唤物里。$(br2)右键干员可打开干员界面，用召唤物右键干员即可收回并有冷却时间。"
+    },
+    {
+      "type": "text",
+      "text": "$(br2)干员专精需要在训练室范围内。$(br2)干员死时需要和干员在同一个维度，不然无法回收！且和干员在同一个维度，干员召唤物才能显示干员信息！"
+    },
+    {
+      "type": "image",
+      "text": "放入相关物品，点击「等级UP」即可升级/精英化，点击「技能UP」即可提升技能等级/专精，点击「潜能UP」即可提升潜能。",
+      "images": [
+        "arkworld:textures/book/operator_i.png"
+      ],
+      "title": "干员界面I",
+      "border": true
+    },
+    {
+      "type": "image",
+      "text": "反击指被攻击时会回击；护主指主人被攻击时会回击；攻标指攻击被标记箭射中的生物；",
+      "images": [
+        "arkworld:textures/book/operator_ii.png"
+      ],
+      "title": "干员界面II",
+      "border": true
+    },
+    {
+      "type": "text",
+      "text": "攻敌指攻击模组的怪物；攻怪指攻击一切怪物；攻皆指攻击一切生物；基建指进入基建模式；"
+    }
+  ]
+}

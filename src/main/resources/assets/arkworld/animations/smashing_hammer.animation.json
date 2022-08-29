@@ -1,0 +1,58 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.hammer.skill_start": {
+			"animation_length": 30,
+			"bones": {
+				"c": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.6": {
+							"vector": [-45, 0, 0]
+						},
+						"29.0": {
+							"vector": [-45, 0, 0]
+						},
+						"30.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.hammer.skill_end": {
+			"animation_length": 1.32,
+			"bones": {
+				"c": {
+					"rotation": {
+						"0.0": {
+							"vector": [-45, 0, 0]
+						},
+						"0.4": {
+							"vector": [75, 0, 0]
+						},
+						"0.8": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.hammer.attack": {
+			"animation_length": 1.5,
+			"bones": {
+				"c": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [-25, 0, 0],
+						"1.0": [75, 0, 0],
+						"1.5": [0, 0, 0]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

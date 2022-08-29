@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "arkworld:blocks/willow_log_top",
+    "side": "arkworld:blocks/willow_log_side"
+  }
+}

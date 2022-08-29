@@ -1,0 +1,11 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model":"minecraft:cube_all",
+    "textures":{ "all": "arkworld:blocks/crude_gold_ore" }
+  },
+  "variants":{
+    "normal":[{}],
+    "inventory":[{"transform": "forge:default-block"}]
+  }
+}

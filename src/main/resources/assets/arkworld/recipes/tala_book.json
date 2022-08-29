@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {"item": "minecraft:paper"},
+    "B": {"item": "arkworld:tala_stone"}
+  },
+  "result": {
+    "type": "minecraft:item_nbt",
+    "item": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "arkworld:tala_book"
+    }
+  }
+}

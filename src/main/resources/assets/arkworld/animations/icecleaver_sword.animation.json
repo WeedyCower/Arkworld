@@ -1,0 +1,18 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.icecleaver_sword.attack": {
+			"animation_length": 0.8,
+			"bones": {
+				"d": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4": [98.96721, -7.58889, 18.31157],
+						"0.6": [-10, 0, 0],
+						"0.8": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

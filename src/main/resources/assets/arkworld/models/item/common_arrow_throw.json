@@ -1,0 +1,6 @@
+{
+  "parent": "arkworld:custom/common_arrow_throw",
+  "textures": {
+    "0": "arkworld:items/common_arrow_throw"
+  }
+}

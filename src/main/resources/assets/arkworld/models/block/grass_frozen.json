@@ -1,0 +1,10 @@
+{
+  "parent": "block/grass",
+  "textures": {
+    "particle": "arkworld:blocks/frozen_dirt",
+    "bottom": "arkworld:blocks/frozen_dirt",
+    "top": "arkworld:blocks/grass_frozen_top",
+    "side": "arkworld:blocks/grass_frozen_side",
+    "overlay": "arkworld:blocks/grass_frozen_side"
+  }
+}

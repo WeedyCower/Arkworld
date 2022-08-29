@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.magic_sword.attack": {
+			"animation_length": 0.8,
+			"bones": {
+				"j": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4": [-65, -15, 0],
+						"0.8": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

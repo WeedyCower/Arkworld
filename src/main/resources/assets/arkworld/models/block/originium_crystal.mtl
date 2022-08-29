@@ -1,0 +1,9 @@
+# Made in Blockbench 3.7.5
+newmtl None
+map_Kd arkworld:blocks/originium_crystal
+
+newmtl none
+map_Kd arkworld:blocks/originium_crystal
+
+newmtl m_0
+map_Kd arkworld:blocks/originium_crystal

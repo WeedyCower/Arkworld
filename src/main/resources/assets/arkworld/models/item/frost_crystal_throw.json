@@ -1,0 +1,6 @@
+{
+  "parent": "arkworld:custom/frost_crystal_throw",
+  "textures": {
+    "0": "arkworld:items/frost_crystal_throw"
+  }
+}

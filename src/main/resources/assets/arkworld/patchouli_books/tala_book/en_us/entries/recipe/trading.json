@@ -1,0 +1,12 @@
+{
+  "sortnum": 2,
+  "name": "贸易站",
+  "icon": "arkworld:trading_station",
+  "category": "recipe",
+  "pages": [
+    {
+      "type": "text",
+      "text": "合成玉：源石碎片x1（需要三级）。$(br2)龙门币（x50,x64,x100）：赤金x2，赤金x3，赤金x4。（概率，等级越高概率越大）"
+    }
+  ]
+}

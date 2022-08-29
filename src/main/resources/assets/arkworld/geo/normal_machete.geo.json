@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.mobile_shield",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "d",
+					"pivot": [-1, -2, 2],
+					"rotation": [-90, 0, 0],
+					"cubes": [
+						{"origin": [-0.5, -3, -1], "size": [1, 2, 6], "uv": [13, 93]},
+						{"origin": [-0.5, -2, -22], "size": [1, 1.5, 21], "inflate": -0.25, "pivot": [-1, -2, -2], "rotation": [-5, 0, 0], "uv": [13, 93]},
+						{"origin": [-0.5, -3, -21], "size": [1, 2, 20], "inflate": -0.3, "pivot": [-1, -2, -2], "rotation": [-5, 0, 0], "uv": [86, 65]},
+						{"origin": [-0.5, -1.02526, -22.22987], "size": [1, 2, 2], "inflate": -0.3, "pivot": [-1, -0.59787, -21.24853], "rotation": [-30, 0, 0], "uv": [86, 65]},
+						{"origin": [-0.5, -4, -2], "size": [1, 4, 1], "inflate": 0.25, "uv": [13, 93]}
+					]
+				}
+			]
+		}
+	]
+}

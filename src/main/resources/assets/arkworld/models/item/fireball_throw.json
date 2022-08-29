@@ -1,0 +1,6 @@
+{
+  "parent": "arkworld:custom/fireball_throw",
+  "textures": {
+    "0": "arkworld:items/fireball_throw"
+  }
+}

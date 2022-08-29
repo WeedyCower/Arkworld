@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.talulah_sword.attack": {
+			"animation_length": 0.6,
+			"bones": {
+				"s": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.3": [65, -25, 0],
+						"0.6": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.talulah_sword.skill": {
+			"animation_length": 1,
+			"bones": {
+				"s": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.28": [15, 0, 100],
+						"0.6": [150, 0, 115],
+						"1.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.28": [4, 2, 0],
+						"0.6": [0, 4, 0],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

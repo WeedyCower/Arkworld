@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.soldier.idle": {
+			"loop": true,
+			"bones": {
+				"right_arm": {
+					"position": [1, 0, 0],
+					"scale": [1.3, 1, 1.1]
+				},
+				"left_arm": {
+					"position": [-1, 0, 0],
+					"scale": [1.3, 1, 1.1]
+				},
+				"left_leg": {
+					"scale": [1.1, 1, 1.1]
+				},
+				"right_leg": {
+					"scale": [1.1, 1, 1.1]
+				},
+				"body": {
+					"scale": [1, 1, 1.1]
+				},
+				"right_boot": {
+					"scale": [1.1, 1, 1.1]
+				},
+				"left_boot": {
+					"scale": [1.1, 1, 1.1]
+				},
+				"head": {
+					"scale": 1.1
+				}
+			}
+		}
+	}
+}

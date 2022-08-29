@@ -1,0 +1,10 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "axis=y":  { "model": "arkworld:huge_log" },
+    "axis=z":   { "model": "arkworld:huge_log", "x": 90 },
+    "axis=x":   { "model": "arkworld:huge_log", "x": 90, "y": 90 },
+    "axis=none": { "model": "arkworld:huge_log" },
+    "inventory": { "model": "arkworld:huge_log" }
+  }
+}

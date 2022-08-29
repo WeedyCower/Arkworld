@@ -1,0 +1,16 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model":"minecraft:cube_all",
+    "textures":{ "all": "arkworld:blocks/huge_leaf" },
+    "uvlock": true
+  },
+  "variants":{
+    "normal":[{}],
+    "inventory":[{"transform": "forge:default-block"}],
+    "check_decay=true,decayable=true":[{ }],
+    "check_decay=true,decayable=false":[{ }],
+    "check_decay=false,decayable=true":[{ }],
+    "check_decay=false,decayable=false":[{ }]
+  }
+}

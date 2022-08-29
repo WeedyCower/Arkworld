@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.icicle.big": {
+			"loop": true,
+			"bones": {
+				"bb_main": {
+					"scale": [2, 2, 2]
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

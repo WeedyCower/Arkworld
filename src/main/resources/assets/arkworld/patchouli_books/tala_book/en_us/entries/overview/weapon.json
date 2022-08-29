@@ -1,0 +1,21 @@
+{
+  "sortnum": 3,
+  "name": "武器",
+  "icon": "minecraft:diamond_sword",
+  "category": "overview",
+  "pages": [
+    {
+      "type": "text",
+      "text": "等级系统：大部分武器都拥有等级系统，品质越高等级上限越高。随着等级的提升，武器的攻速，伤害，特殊效果等均会提升。$(br2)模组系统：武器模组，类似于附魔。品质越高，可安装模组越多。模组可从模组箱子中抽取，低劣品质可安装1个，普通2个，高级4个，史诗6个，以此类推。"
+    },
+    {
+      "type": "image",
+      "text": "左边放武器，右边放魔矿或武器/模组/修复矿/装置，点击中间箭头即可升级/安装模组/修复/清空模组",
+      "images": [
+        "arkworld:textures/book/weapon_table.png"
+      ],
+      "title": "武器台",
+      "border": true
+    }
+  ]
+}

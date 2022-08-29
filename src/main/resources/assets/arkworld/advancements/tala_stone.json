@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "arkworld:tala_stone"
+    },
+    "title": {
+      "translate": "advancements.tala_stone.title"
+    },
+    "description": {
+      "translate": "advancements.tala_stone.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tala_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "arkworld:tala_stone",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "arkworld:welcome"
+}

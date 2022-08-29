@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=hot_floor": {
+      "model": "arkworld:empty"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.evolutionv1",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 18, 0],
+					"cubes": [
+						{"origin": [1, 24, -6], "size": [5, 6, 0], "pivot": [4, 30, -6], "rotation": [-2.5, 0, -2.5], "uv": [16, 60]},
+						{"origin": [-4, 26, -6], "size": [6, 4, 0], "pivot": [4, 30, -6], "rotation": [-2.5, 0, 0], "uv": [26, 60]},
+						{"origin": [-6, 21, 6], "size": [12, 9, 0], "pivot": [0, 30, 6], "rotation": [2.5, 0, 0], "uv": [36, 0]},
+						{"origin": [3, 13, -6], "size": [3, 11, 0], "pivot": [4, 30, -6], "rotation": [-2.5, 0, -2.5], "uv": [58, 20]},
+						{"origin": [-6, 13, -6], "size": [3, 17, 0], "pivot": [-4, 30, -6], "rotation": [-2.5, 0, 2.5], "uv": [52, 20]},
+						{"origin": [6, 21, -6], "size": [0, 9, 12], "pivot": [6, 30, 0], "rotation": [0, 0, -2.5], "uv": [0, 12]},
+						{"origin": [-6, 21, -6], "size": [0, 9, 12], "pivot": [-6, 30, 0], "rotation": [0, 0, 2.5], "uv": [0, 21]},
+						{"origin": [-6, 14, -5], "size": [0, 7, 4], "pivot": [-6, 30, 0], "rotation": [0, 0, 2.5], "uv": [30, 69]},
+						{"origin": [-6, 18, -6], "size": [12, 12, 12], "uv": [0, 0]},
+						{"origin": [1.5, 26.5, -6.5], "size": [5, 4, 5], "pivot": [4, 28, -4], "rotation": [2.5, 5, 5], "uv": [39, 39]},
+						{"origin": [-7, 29, -1], "size": [3, 6, 3], "pivot": [-4, 30, 1], "rotation": [0, 0, -45], "uv": [55, 34]}
+					]
+				},
+				{
+					"name": "eye",
+					"parent": "body",
+					"pivot": [-1, 23, -6],
+					"cubes": [
+						{"origin": [-2, 20, -7], "size": [4, 1, 1], "inflate": -0.1, "pivot": [-1, 23, -3], "rotation": [0, 0, 45], "uv": [34, 38]},
+						{"origin": [-2, 20, -7], "size": [1, 4, 1], "inflate": -0.1, "pivot": [-1, 23, -3], "rotation": [0, 0, 45], "uv": [45, 24]},
+						{"origin": [-2, 23, -7], "size": [4, 1, 1], "inflate": -0.1, "pivot": [-1, 23, -3], "rotation": [0, 0, 45], "uv": [36, 9]},
+						{"origin": [1, 20, -7], "size": [1, 4, 1], "inflate": -0.1, "pivot": [-1, 23, -3], "rotation": [0, 0, 45], "uv": [24, 24]}
+					]
+				},
+				{
+					"name": "c",
+					"parent": "body",
+					"pivot": [-1, 18, -3],
+					"cubes": [
+						{"origin": [-3, 12, -5], "size": [4, 9, 4], "uv": [0, 87]},
+						{"origin": [-2.5, 5, -4.5], "size": [3, 9, 3], "pivot": [-1, 12, -3], "rotation": [0, 0, -12.5], "uv": [3, 98]},
+						{"origin": [-1.5, -1, -4], "size": [2, 7, 2], "pivot": [0, 5, -3], "rotation": [0, 0, 80], "uv": [4, 107]}
+					]
+				},
+				{
+					"name": "c2",
+					"parent": "body",
+					"pivot": [1, 18, 0],
+					"cubes": [
+						{"origin": [-1, 12, -1], "size": [3, 9, 3], "pivot": [1, 18, 1], "rotation": [0, 0, -5], "uv": [2, 88]},
+						{"origin": [0, 3, -0.5], "size": [2, 12, 2], "uv": [6, 97]}
+					]
+				},
+				{
+					"name": "c3",
+					"parent": "body",
+					"pivot": [-4, 18, 4],
+					"cubes": [
+						{"origin": [-5, 12, 1], "size": [3, 9, 3], "pivot": [-3, 18, 2], "rotation": [7.5, 0, -12.5], "uv": [1, 89]},
+						{"origin": [-2.17766, 6.02225, 2.29284], "size": [2, 7, 2], "pivot": [-2, 12, 2], "rotation": [7.5, 0, -65], "uv": [4, 97]},
+						{"origin": [1.43762, 5.63051, 1.8], "size": [5, 5, 5], "pivot": [3, 8, 4], "rotation": [7.5, -5, -12.5], "uv": [19, 38], "mirror": true}
+					]
+				},
+				{
+					"name": "c4",
+					"parent": "body",
+					"pivot": [3, 18, 4],
+					"cubes": [
+						{"origin": [1, 12, 1], "size": [4, 8, 4], "pivot": [3, 18, 3], "rotation": [37.5, 0, 7.5], "uv": [0, 87]},
+						{"origin": [-0.16119, 6.47143, 4.42381], "size": [3, 8, 3], "pivot": [2, 13, 7], "rotation": [2.5, 0, 52.5], "uv": [3, 97]},
+						{"origin": [-4.49744, 2.25897, 5.2], "size": [2, 8, 2], "pivot": [-3, 10, 7], "rotation": [2.5, 0, -7.5], "uv": [3, 103]},
+						{"origin": [-6.49744, -4.74103, 2.2], "size": [7, 7, 7], "pivot": [-3, 10, 7], "rotation": [2.5, 0, -7.5], "uv": [24, 24], "mirror": true}
+					]
+				}
+			]
+		}
+	]
+}

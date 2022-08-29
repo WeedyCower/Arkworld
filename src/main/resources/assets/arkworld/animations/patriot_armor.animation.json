@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.patriot.idle": {
+			"loop": true,
+			"animation_length": 0.24,
+			"bones": {
+				"head": {
+					"position": [0, -8, 0],
+					"scale": 2
+				},
+				"right_arm": {
+					"scale": [1.4, 1.1, 1.1]
+				},
+				"body": {
+					"scale": 1.1
+				},
+				"left_arm": {
+					"scale": [1.4, 1.1, 1.1]
+				},
+				"left_leg": {
+					"scale": 1.1
+				},
+				"right_leg": {
+					"scale": 1.1
+				},
+				"right_boot": {
+					"scale": 1.1
+				},
+				"left_boot": {
+					"scale": 1.1
+				}
+			}
+		}
+	}
+}

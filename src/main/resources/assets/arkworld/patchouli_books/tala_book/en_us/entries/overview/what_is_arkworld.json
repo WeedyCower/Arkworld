@@ -1,0 +1,14 @@
+{
+  "sortnum": 0,
+  "name": "模组介绍",
+  "icon": "minecraft:book",
+  "category": "overview",
+  "pages": [
+    {
+      "type": "link",
+      "text": "方舟世界(Arkworld) 作者：草海牛。是一个集冒险/机械/养成为一体的模组。方舟世界有维度，武器，基建，生物，方块等方面，欢迎各位耐心探索",
+      "url": "https://www.weedycow.com/",
+      "link_text": "模组官网"
+    }
+  ]
+}

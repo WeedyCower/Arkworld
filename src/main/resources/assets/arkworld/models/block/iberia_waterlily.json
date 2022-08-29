@@ -1,0 +1,7 @@
+{
+  "parent": "block/carpet",
+  "textures": {
+    "particle": "arkworld:blocks/iberia_waterlily",
+    "wool": "arkworld:blocks/iberia_waterlily"
+  }
+}

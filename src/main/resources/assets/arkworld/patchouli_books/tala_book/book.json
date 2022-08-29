@@ -1,0 +1,11 @@
+{
+  "name": "泰拉书",
+  "advancement_namespaces": [
+    "arkworld"
+  ],
+  "landing_text": "泰拉书，关于泰拉世界情况的书，由伊比利亚某不知名工程师著成。",
+  "model": "arkworld:tala_book",
+  "creative_tab": "itemGroup.arkworld_item",
+  "show_progress": false,
+  "version": 1
+}

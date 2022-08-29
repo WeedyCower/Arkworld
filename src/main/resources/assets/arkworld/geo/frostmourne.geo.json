@@ -1,0 +1,63 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.frostnova_f",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "rightarmdown",
+					"pivot": [1, -2, 7],
+					"rotation": [-90, 0, 0]
+				},
+				{
+					"name": "thorn",
+					"parent": "rightarmdown",
+					"pivot": [1, -8, 8],
+					"cubes": [
+						{"origin": [1, -8, 13], "size": [1, 1, 1], "inflate": 0.1, "pivot": [1, -8, 8], "rotation": [37.5, 0, 0], "uv": [47, 76]},
+						{"origin": [1, -8, 2], "size": [1, 1, 3], "inflate": -0.2, "pivot": [1, -8, 8], "rotation": [37.5, 0, 0], "uv": [92, 72]},
+						{"origin": [1, -8, 7], "size": [1, 1, 4], "inflate": -0.11, "pivot": [1, -8, 8], "rotation": [37.5, 0, 0], "uv": [28, 78]},
+						{"origin": [1, -8, -1], "size": [1, 1, 3], "inflate": -0.2, "pivot": [1, -8, 8], "rotation": [37.5, 0, 0], "uv": [32, 38]},
+						{"origin": [1, -8, 1], "size": [1, 1, 3], "inflate": -0.1, "pivot": [1, -8, 8], "rotation": [37.5, 0, 0], "uv": [32, 38]},
+						{"origin": [1, -8, 4], "size": [1, 1, 1.2], "inflate": -0.1, "pivot": [1, -8, 8], "rotation": [37.5, 0, 0], "uv": [32, 38]},
+						{"origin": [1, -8, 13], "size": [1, 1, 3], "pivot": [1, -8, 8], "rotation": [37.5, 0, 0], "uv": [94, 47]},
+						{"origin": [1, -8, 11], "size": [1, 1, 3], "inflate": -0.1, "pivot": [1, -8, 8], "rotation": [37.5, 0, 0], "uv": [32, 38]},
+						{"origin": [1, -8, 10], "size": [1, 1, 3], "inflate": -0.1, "pivot": [1, -8, 8], "rotation": [37.5, 0, 0], "uv": [32, 38]},
+						{"origin": [1, -8, 5], "size": [1, 1, 3], "inflate": -0.1, "pivot": [1, -8, 8], "rotation": [37.5, 0, 0], "uv": [32, 38]}
+					]
+				},
+				{
+					"name": "knife",
+					"parent": "rightarmdown",
+					"pivot": [1, -7, 7],
+					"rotation": [-7.5, 0, 0],
+					"cubes": [
+						{"origin": [0, -7.5, 11], "size": [1, 1, 5], "inflate": -0.21, "uv": [41, 17]},
+						{"origin": [0, -7.85963, 13.60446], "size": [1, 1, 3], "inflate": -0.21, "pivot": [0, -7.85963, 14.60446], "rotation": [10, 0, 0], "uv": [41, 17]},
+						{"origin": [0, -8, 9], "size": [1, 2, 5], "inflate": -0.21, "uv": [41, 17]},
+						{"origin": [0, -8, 4], "size": [1, 2, 5], "inflate": 0.1, "uv": [0, 75]},
+						{"origin": [0, -7, 9], "size": [1, 1, 5], "inflate": -0.2, "uv": [32, 36]},
+						{"origin": [0, -7.14196, 13.62258], "size": [1, 1, 3], "inflate": -0.2, "pivot": [1, -6.14196, 14.62258], "rotation": [-10, 0, 0], "uv": [32, 38]}
+					]
+				},
+				{
+					"name": "ice",
+					"pivot": [1, -4, 2],
+					"cubes": [
+						{"origin": [0, -4, 3], "size": [2, 0, 0], "inflate": 0.2, "uv": [33, 40]},
+						{"origin": [0, -4, 1], "size": [0, 0, 2], "inflate": 0.2, "uv": [33, 39]},
+						{"origin": [2, -4, 1], "size": [0, 0, 2], "inflate": 0.2, "uv": [32, 39]},
+						{"origin": [0, -4, 1], "size": [2, 0, 0], "inflate": 0.2, "uv": [32, 41]}
+					]
+				}
+			]
+		}
+	]
+}

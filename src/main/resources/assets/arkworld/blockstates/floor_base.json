@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=floor_base": {
+      "model": "arkworld:empty"
+    }
+  }
+}

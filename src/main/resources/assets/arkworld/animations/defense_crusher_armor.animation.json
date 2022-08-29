@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.defense_crusher.idle": {
+			"animation_length": 0.72,
+			"bones": {
+				"body": {
+					"scale": [1, 1, 1.7]
+				},
+				"right_arm": {
+					"scale": 1.1
+				},
+				"left_arm": {
+					"scale": 1.1
+				}
+			}
+		}
+	}
+}

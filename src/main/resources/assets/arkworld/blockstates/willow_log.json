@@ -1,0 +1,10 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "axis=y":  { "model": "arkworld:willow_log" },
+    "axis=z":   { "model": "arkworld:willow_log", "x": 90 },
+    "axis=x":   { "model": "arkworld:willow_log", "x": 90, "y": 90 },
+    "axis=none": { "model": "arkworld:willow_log" },
+    "inventory": { "model": "arkworld:willow_log" }
+  }
+}

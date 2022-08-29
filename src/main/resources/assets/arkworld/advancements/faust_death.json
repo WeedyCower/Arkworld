@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "arkworld:faust_common_arrow"
+    },
+    "title": {
+      "translate": "advancements.faust_death.title"
+    },
+    "description": {
+      "translate": "advancements.faust_death.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "frostnova_death": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "arkworld:faust_doll",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "arkworld:arkworld"
+}

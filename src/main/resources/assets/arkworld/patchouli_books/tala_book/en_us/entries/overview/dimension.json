@@ -1,0 +1,21 @@
+{
+  "sortnum": 1,
+  "name": "维度",
+  "icon": "arkworld:portal_arkworld",
+  "category": "overview",
+  "pages": [
+    {
+      "type": "image",
+      "text": "此模组添加了一个维度：泰拉。想要前往泰拉世界，需要建造石棺并激活，然后进入。",
+      "images": [
+        "arkworld:textures/book/teleport_arkworld.png"
+      ],
+      "title": "石棺",
+      "border": true
+    },
+    {
+      "type": "text",
+      "text": "石棺是由数个泰拉石（主世界地底生成）建成的4x3x2结构，中间空两格并填上水，然后往其中扔任意床即可激活传送门"
+    }
+  ]
+}

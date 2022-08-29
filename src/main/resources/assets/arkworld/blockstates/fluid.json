@@ -1,0 +1,17 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "originium_contaminated_water": {
+      "model": "forge:fluid",
+      "custom": {
+        "fluid": "originium_contaminated_water"
+      }
+    },
+    "iberia_water": {
+      "model": "forge:fluid",
+      "custom": {
+        "fluid": "iberia_water"
+      }
+    }
+  }
+}

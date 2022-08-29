@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.guerrilla_axe.attack": {
+			"animation_length": 0.8,
+			"bones": {
+				"p": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4": [65, -25, 0],
+						"0.8": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.4": [2, 0, -2],
+						"0.8": [0, 0, 0]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

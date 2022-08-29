@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=reduce_defense_floor": {
+      "model": "arkworld:empty"
+    }
+  }
+}

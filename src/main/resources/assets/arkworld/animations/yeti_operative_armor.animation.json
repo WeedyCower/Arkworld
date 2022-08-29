@@ -1,0 +1,50 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.yeti_operative.idle": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"scale": {
+						"vector": [1.1, 1.1, 1.1]
+					}
+				},
+				"body": {
+					"scale": {
+						"vector": [1.1, 1, 1.1]
+					}
+				},
+				"right_arm": {
+					"scale": {
+						"vector": [1.1, 1, 1.1]
+					}
+				},
+				"left_arm": {
+					"scale": {
+						"vector": [1.1, 1, 1.1]
+					}
+				},
+				"left_leg": {
+					"scale": {
+						"vector": [1.1, 1, 1.1]
+					}
+				},
+				"right_leg": {
+					"scale": {
+						"vector": [1.1, 1, 1.1]
+					}
+				},
+				"right_boot": {
+					"scale": {
+						"vector": [1.1, 1, 1.1]
+					}
+				},
+				"left_boot": {
+					"scale": {
+						"vector": [1.1, 1, 1.1]
+					}
+				}
+			}
+		}
+	}
+}

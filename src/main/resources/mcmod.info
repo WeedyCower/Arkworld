@@ -1,0 +1,16 @@
+[
+{
+  "modid": "arkworld",
+  "name": "Arkworld",
+  "description": "This is a mod about Arknight.(这是一个关于明日方舟的模组)",
+  "version": "${version}",
+  "mcversion": "${mc_version}",
+  "url": "https://www.weedycow.com",
+  "updateUrl": "",
+  "authorList": ["WeedyCow(两只草海牛)"],
+  "credits": "Duck弑君者，大D，kyuusyou，爱玩MC的薯饼，我是史尔特尔的狗，SKADI624，贴贴怪，Justice_seigi，负旋异构酶。",
+  "logoFile": "logo.png",
+  "screenshots": [],
+  "dependencies": ["weedylib"]
+}
+]

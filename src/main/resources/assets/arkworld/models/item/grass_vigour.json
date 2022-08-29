@@ -1,0 +1,10 @@
+{
+  "parent": "block/grass",
+  "textures": {
+    "particle": "arkworld:blocks/fertile_dirt",
+    "bottom": "arkworld:blocks/fertile_dirt",
+    "top": "arkworld:blocks/grass_vigour_top",
+    "side": "arkworld:blocks/grass_vigour_side",
+    "overlay": "arkworld:blocks/grass_vigour_overlay"
+  }
+}

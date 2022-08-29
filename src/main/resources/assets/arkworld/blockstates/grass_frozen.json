@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "snowy=false": [
+      { "model": "arkworld:grass_frozen" },
+      { "model": "arkworld:grass_frozen", "y": 90 },
+      { "model": "arkworld:grass_frozen", "y": 180 },
+      { "model": "arkworld:grass_frozen", "y": 270 }
+    ],
+    "snowy=true":  { "model": "arkworld:grass_frozen" }
+  }
+}

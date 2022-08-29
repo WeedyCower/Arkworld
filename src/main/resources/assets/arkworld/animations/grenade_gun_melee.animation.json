@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.skullshatterer_melee.attack": {
+			"animation_length": 1,
+			"bones": {
+				"leftgun": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.32": [-80, 25, -20],
+						"0.6": [40, 25, -20],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"rightgun": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.32": [-80, -25, 20],
+						"0.6": [40, -25, 20],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

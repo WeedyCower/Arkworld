@@ -1,0 +1,102 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [128, 128],
+	"textures": {
+		"0": "arkworld:entities/defense_crusher"
+	},
+	"elements": [
+		{
+			"name": "right_boot",
+			"from": [8, 0, 6],
+			"to": [12, 6, 10],
+			"faces": {
+				"north": {"uv": [9.5, 3.25, 10, 4], "texture": "#0"},
+				"east": {"uv": [9, 3.25, 9.5, 4], "texture": "#0"},
+				"south": {"uv": [10.5, 3.25, 11, 4], "texture": "#0"},
+				"west": {"uv": [10, 3.25, 10.5, 4], "texture": "#0"},
+				"up": {"uv": [10, 3.25, 9.5, 2.75], "texture": "#0"},
+				"down": {"uv": [10.5, 2.75, 10, 3.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "right_boot",
+			"from": [7.75, -0.25, 5.75],
+			"to": [12.25, 7.25, 10.25],
+			"faces": {
+				"north": {"uv": [0.5, 8.5, 1, 9.375], "texture": "#0"},
+				"east": {"uv": [0, 8.5, 0.5, 9.375], "texture": "#0"},
+				"south": {"uv": [1.5, 8.5, 2, 9.375], "texture": "#0"},
+				"west": {"uv": [1, 8.5, 1.5, 9.375], "texture": "#0"},
+				"up": {"uv": [1, 8.5, 0.5, 8], "texture": "#0"},
+				"down": {"uv": [1.5, 8, 1, 8.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "left_boot",
+			"from": [4, 0, 6],
+			"to": [8, 6, 10],
+			"shade": false,
+			"faces": {
+				"north": {"uv": [10, 3.25, 9.5, 4], "texture": "#0"},
+				"east": {"uv": [10.5, 3.25, 10, 4], "texture": "#0"},
+				"south": {"uv": [11, 3.25, 10.5, 4], "texture": "#0"},
+				"west": {"uv": [9.5, 3.25, 9, 4], "texture": "#0"},
+				"up": {"uv": [9.5, 3.25, 10, 2.75], "texture": "#0"},
+				"down": {"uv": [10, 2.75, 10.5, 3.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "left_boot",
+			"from": [3.75, -0.25, 5.75],
+			"to": [8.25, 7.25, 10.25],
+			"shade": false,
+			"faces": {
+				"north": {"uv": [1, 8.5, 0.5, 9.375], "texture": "#0"},
+				"east": {"uv": [1.5, 8.5, 1, 9.375], "texture": "#0"},
+				"south": {"uv": [2, 8.5, 1.5, 9.375], "texture": "#0"},
+				"west": {"uv": [0.5, 8.5, 0, 9.375], "texture": "#0"},
+				"up": {"uv": [0.5, 8.5, 1, 8], "texture": "#0"},
+				"down": {"uv": [1, 8, 1.5, 8.5], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 8, 0]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 8, 0]
+		},
+		"firstperson_righthand": {
+			"translation": [0, 8, 0]
+		},
+		"firstperson_lefthand": {
+			"translation": [0, 8, 0]
+		},
+		"ground": {
+			"translation": [0, 8.5, 0]
+		},
+		"gui": {
+			"rotation": [0, -180, 0],
+			"translation": [0, 6.5, 0],
+			"scale": [1.5, 1.5, 1.5]
+		},
+		"fixed": {
+			"translation": [0, 4.5, -1.75]
+		}
+	},
+	"groups": [
+		{
+			"name": "right_boot",
+			"origin": [2, 6, -2],
+			"color": 7,
+			"children": [0, 1]
+		},
+		{
+			"name": "left_boot",
+			"origin": [-2, 6, -2],
+			"color": 9,
+			"children": [2, 3]
+		}
+	]
+}

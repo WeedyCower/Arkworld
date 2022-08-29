@@ -1,0 +1,7 @@
+{
+  "parent": "block/carpet",
+  "textures": {
+    "particle": "arkworld:blocks/fungus_blanket",
+    "wool": "arkworld:blocks/fungus_blanket"
+  }
+}

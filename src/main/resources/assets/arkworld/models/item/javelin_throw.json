@@ -1,0 +1,6 @@
+{
+  "parent": "arkworld:custom/javelin_throw",
+  "textures": {
+    "0": "arkworld:items/javelin_throw"
+  }
+}

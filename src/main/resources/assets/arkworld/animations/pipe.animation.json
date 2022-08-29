@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.pipe.attack": {
+			"animation_length": 0.4,
+			"bones": {
+				"weapon": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2": [60, -30, 0],
+						"0.4": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

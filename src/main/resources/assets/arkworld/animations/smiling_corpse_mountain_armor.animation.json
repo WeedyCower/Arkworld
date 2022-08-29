@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.smiling_corpse_mountain.idle": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, -1.7, 0],
+					"scale": 1.3
+				}
+			}
+		}
+	}
+}

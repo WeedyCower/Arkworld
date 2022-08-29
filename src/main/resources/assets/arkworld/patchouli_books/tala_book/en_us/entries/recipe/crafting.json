@@ -1,0 +1,12 @@
+{
+  "sortnum": 3,
+  "name": "工作台",
+  "icon": "minecraft:crafting_table",
+  "category": "recipe",
+  "pages": [
+    {
+      "type": "text",
+      "text": "加工站：铁锭x8，工作台x1，工作台在中间，铁锭绕一圈。$(br2)泰拉书：纸x8，泰拉石x1，泰拉石在中间，纸绕一圈。"
+    }
+  ]
+}

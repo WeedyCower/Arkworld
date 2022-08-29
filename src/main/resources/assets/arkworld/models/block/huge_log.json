@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "arkworld:blocks/huge_log_top",
+    "side": "arkworld:blocks/huge_log_side"
+  }
+}

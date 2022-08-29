@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "arkworld:portal_arkworld"
+    },
+    "title": {
+      "translate": "advancements.arkworld.title"
+    },
+    "description": {
+      "translate": "advancements.arkworld.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "arkworld": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "dimension": "arkworld"
+      }
+    }
+  },
+  "parent": "arkworld:tala_stone"
+}
