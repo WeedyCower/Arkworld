@@ -36,8 +36,8 @@ public class Bullfrog extends ArkAnimal
         this.tasks.addTask(0, new EntityAISwimming(this));
         this.tasks.addTask(1, new EntityAIPanic(this, getMoveSpeed()));
         this.tasks.addTask(2, new EntityAIMate(this, getMoveSpeed()));
-        this.tasks.addTask(3, new EntityAITempt(this, getMoveSpeed()*1.1f, Items.SLIME_BALL, false));
-        this.tasks.addTask(4, new EntityAIFollowParent(this, getMoveSpeed()*1.1f));
+        this.tasks.addTask(3, new EntityAITempt(this, getMoveSpeed()*1.11f, Items.SLIME_BALL, false));
+        this.tasks.addTask(4, new EntityAIFollowParent(this, getMoveSpeed()*1.11f));
         this.tasks.addTask(5, new EntityAIWanderAvoidWater(this, getMoveSpeed()));
         this.tasks.addTask(6, new EntityAIWatchClosest(this, EntityPlayer.class, getMoveSpeed()));
         this.tasks.addTask(7, new EntityAILookIdle(this));
