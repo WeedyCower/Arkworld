@@ -1,5 +1,7 @@
 package com.weedycow.arkworld.gui;
 
+import com.weedycow.arkworld.item.material.orirocks.Orirock;
+import com.weedycow.arkworld.item.normal.Oricoal;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
@@ -72,8 +74,12 @@ public class PowerStationContainer extends Container
 
             if (index < 36)
             {
-                if (!this.mergeItemStack(itemstack1, 36, this.inventorySlots.size(), true))
+                if (!this.mergeItemStack(itemstack1, 36, 37, true))
                 {
+                    if (!this.mergeItemStack(itemstack1, 37, 38, true))
+                    {
+                        return ItemStack.EMPTY;
+                    }
                     return ItemStack.EMPTY;
                 }
             }
@@ -91,6 +97,7 @@ public class PowerStationContainer extends Container
                 slot.onSlotChanged();
             }
         }
+
         return itemstack;
     }
 }

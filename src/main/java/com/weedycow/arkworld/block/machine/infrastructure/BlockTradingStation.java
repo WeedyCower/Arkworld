@@ -1,6 +1,7 @@
 package com.weedycow.arkworld.block.machine.infrastructure;
 
 import com.weedycow.arkworld.Arkworld;
+import com.weedycow.arkworld.RecipeTable;
 import com.weedycow.arkworld.entity.operator.Operator;
 import com.weedycow.arkworld.item.material.gold.PureGold;
 import com.weedycow.arkworld.item.material.infrastructure.ConcreteBuildingMaterial;
@@ -8,7 +9,6 @@ import com.weedycow.arkworld.item.material.infrastructure.LightBuildingMaterial;
 import com.weedycow.arkworld.item.material.infrastructure.ReinforcedBuildingMaterial;
 import com.weedycow.arkworld.item.normal.OriginiumShard;
 import com.weedycow.arkworld.registry.GuiRegistry;
-import com.weedycow.arkworld.registry.ItemRegistry;
 import com.weedycow.arkworld.util.ArkResUtil;
 import com.weedycow.arkworld.world.data.MachineWorldSavedData;
 import net.minecraft.block.state.IBlockState;
@@ -37,8 +37,6 @@ import software.bernie.geckolib3.core.manager.AnimationData;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
@@ -84,7 +82,6 @@ public class BlockTradingStation extends BlockMachine
         float efficiencyAdd;
         float moodConsumeReduce;
         protected ItemStackHandler slot = new ItemStackHandler(2);
-        List<ItemStack> stacks = new ArrayList<>(Arrays.asList(new ItemStack(ItemRegistry.LMB,50),new ItemStack(ItemRegistry.LMB,64),new ItemStack(ItemRegistry.LMB_HUNDRED),new ItemStack(ItemRegistry.ORUNDUM)));
         AnimationController<TileTradingStation> controllerIdle = new AnimationController<>(this, "idle", 1, this::PlayState);
 
         public TileTradingStation()
@@ -152,7 +149,8 @@ public class BlockTradingStation extends BlockMachine
 
                 if (getCountdown() == 0 && stack != 0)
                 {
-                    slot.insertItem(1, stacks.get(stack - 1), false);
+                    ItemStack sta = RecipeTable.TRADING_STATION_RECIPE.get(stack - 1).copy();
+                    slot.insertItem(1, sta, false);
                     setStack(0);
                 }
 

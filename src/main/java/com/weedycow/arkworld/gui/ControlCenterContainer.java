@@ -180,7 +180,7 @@ public class ControlCenterContainer extends Container implements IButton
 
             if (index < 36)
             {
-                if (!this.mergeItemStack(itemstack1, 36, this.inventorySlots.size(), true))
+                if (!this.mergeItemStack(itemstack1, 36, 39, true))
                 {
                     return ItemStack.EMPTY;
                 }
@@ -199,6 +199,7 @@ public class ControlCenterContainer extends Container implements IButton
                 slot.onSlotChanged();
             }
         }
+
         return itemstack;
     }
 

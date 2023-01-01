@@ -24,8 +24,8 @@ public class Arkworld
 {
     public static final String MODID = "arkworld";
     public static final String NAME = "Arkworld";
-    public static final String VERSION = "0.2.3";
-    public static final boolean NEWDES = false;
+    public static final String VERSION = "0.2.3-3";
+    public static boolean NEWDES = false;
     private static final SimpleNetworkWrapper NETWORK = NetworkRegistry.INSTANCE.newSimpleChannel(MODID);
 
     public Arkworld()

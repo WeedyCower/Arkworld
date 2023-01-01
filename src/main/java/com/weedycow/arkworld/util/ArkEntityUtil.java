@@ -41,6 +41,8 @@ public class ArkEntityUtil
 
     public static Operator getOperator(World world, String uuid)
     {
+        if(world==null || uuid==null || uuid.isEmpty()) return null;
+
         for(Entity entity : world.loadedEntityList)
         {
             if(entity instanceof Operator)

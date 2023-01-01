@@ -117,9 +117,9 @@ public class DefenseCrusherArmor extends ArkArmor
             if (state.getStates().contains(EnumState.VERTIGO))
             {
                 if(hasAll && new Random().nextInt(2) == 0)
-                    state.addFunctionOnlyTick(EnumState.VERTIGO, CapabilityState.Process.getLevel(state.state, EnumState.VERTIGO)/3);
+                    state.addFunctionOnlyTick(EnumState.VERTIGO, state.getLevel( EnumState.VERTIGO)/3);
                 else if ((hasChest && new Random().nextInt(3) == 0) || (hasLegs && new Random().nextInt(4) == 0)|| (hasFeet && new Random().nextInt(5) == 0))
-                    state.addFunctionOnlyTick(EnumState.VERTIGO, CapabilityState.Process.getLevel(state.state, EnumState.VERTIGO)/2);
+                    state.addFunctionOnlyTick(EnumState.VERTIGO, state.getLevel( EnumState.VERTIGO)/2);
             }
         }
     }

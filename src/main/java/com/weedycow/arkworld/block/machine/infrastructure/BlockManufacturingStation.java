@@ -1,10 +1,10 @@
 package com.weedycow.arkworld.block.machine.infrastructure;
 
 import com.weedycow.arkworld.Arkworld;
+import com.weedycow.arkworld.RecipeTable;
 import com.weedycow.arkworld.entity.operator.Operator;
 import com.weedycow.arkworld.item.normal.Lmb;
 import com.weedycow.arkworld.registry.GuiRegistry;
-import com.weedycow.arkworld.registry.ItemRegistry;
 import com.weedycow.arkworld.util.ArkItemUtil;
 import com.weedycow.arkworld.util.ArkResUtil;
 import com.weedycow.arkworld.world.data.MachineWorldSavedData;
@@ -14,7 +14,6 @@ import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
@@ -87,46 +86,6 @@ public class BlockManufacturingStation extends BlockMachine
         List<ItemStack> adjStacks;
         protected ItemStackHandler slot = new ItemStackHandler(3);
         AnimationController<TileManufacturingStation> controllerIdle = new AnimationController<>(this, "idle", 1, this::PlayState);
-        public static final List<ItemStack> DRILL_BATTLE_RECORD = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.ORI_ESTER),new ItemStack(ItemRegistry.FILM,2),new ItemStack(ItemRegistry.DRILL_BATTLE_RECORD),new ItemStack(ItemRegistry.LMB,2)));
-        public static final List<ItemStack> FRONTLINE_BATTLE_RECORD = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.GEL),new ItemStack(ItemRegistry.FILM,3),new ItemStack(ItemRegistry.FRONTLINE_BATTLE_RECORD),new ItemStack(ItemRegistry.LMB,4)));
-        public static final List<ItemStack> TACTICAL_BATTLE_RECORD = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.CRUDE_GOLD,2),new ItemStack(ItemRegistry.FILM,5),new ItemStack(ItemRegistry.TACTICAL_BATTLE_RECORD),new ItemStack(ItemRegistry.LMB,9)));
-        public static final List<ItemStack> PURE_GOLD = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.MIXED_GOLD,2),ItemStack.EMPTY,new ItemStack(ItemRegistry.PURE_GOLD),new ItemStack(ItemRegistry.LMB,4)));
-        public static final List<ItemStack> VANGUARD_DUALCHIP = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.VANGUARD_CHIPSET,2),new ItemStack(ItemRegistry.CHIP_CATALYST),new ItemStack(ItemRegistry.VANGUARD_DUALCHIP),new ItemStack(ItemRegistry.LMB,3)));
-        public static final List<ItemStack> GUARD_DUALCHIP = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.GUARD_CHIPSET,2),new ItemStack(ItemRegistry.CHIP_CATALYST),new ItemStack(ItemRegistry.GUARD_DUALCHIP),new ItemStack(ItemRegistry.LMB,3)));
-        public static final List<ItemStack> DEFENDER_DUALCHIP = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.DEFENDER_CHIPSET,2),new ItemStack(ItemRegistry.CHIP_CATALYST),new ItemStack(ItemRegistry.DEFENDER_DUALCHIP),new ItemStack(ItemRegistry.LMB,3)));
-        public static final List<ItemStack> SNIPER_DUALCHIP = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.SNIPER_CHIPSET,2),new ItemStack(ItemRegistry.CHIP_CATALYST),new ItemStack(ItemRegistry.SNIPER_DUALCHIP),new ItemStack(ItemRegistry.LMB,3)));
-        public static final List<ItemStack> CASTER_DUALCHIP = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.CASTER_CHIPSET,2),new ItemStack(ItemRegistry.CHIP_CATALYST),new ItemStack(ItemRegistry.CASTER_DUALCHIP),new ItemStack(ItemRegistry.LMB,3)));
-        public static final List<ItemStack> MEDIC_DUALCHIP = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.MEDIC_CHIPSET,2),new ItemStack(ItemRegistry.CHIP_CATALYST),new ItemStack(ItemRegistry.MEDIC_DUALCHIP),new ItemStack(ItemRegistry.LMB,3)));
-        public static final List<ItemStack> SUPPORTER_DUALCHIP = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.SUPPORTER_CHIPSET,2),new ItemStack(ItemRegistry.CHIP_CATALYST),new ItemStack(ItemRegistry.SUPPORTER_CHIP),new ItemStack(ItemRegistry.LMB,3)));
-        public static final List<ItemStack> SPECIALIST_DUALCHIP = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.SUPPORTER_CHIPSET,2),new ItemStack(ItemRegistry.CHIP_CATALYST),new ItemStack(ItemRegistry.SPECIALIST_DUALCHIP),new ItemStack(ItemRegistry.LMB,3)));
-        public static final List<ItemStack> LEVEL1 = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.LIGHT_BUILDING_MATERIAL),ItemStack.EMPTY,new ItemStack(ItemRegistry.LMB,1),new ItemStack(ItemRegistry.LMB,1)));
-        public static final List<ItemStack> LEVEL2 = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.CONCRETE_BUILDING_MATERIAL,3),ItemStack.EMPTY,new ItemStack(ItemRegistry.LMB,2),new ItemStack(ItemRegistry.LMB,6)));
-        public static final List<ItemStack> LEVEL3 = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.REINFORCED_BUILDING_MATERIAL,5),ItemStack.EMPTY,new ItemStack(ItemRegistry.LMB,3),new ItemStack(ItemRegistry.LMB,12)));
-        public static final List<ItemStack> MANGANESE_ORE = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.MANGANESE_SHARD,2),new ItemStack(ItemRegistry.SUGAR_SUBSTITUTE,1),new ItemStack(ItemRegistry.MANGANESE_ORE,1),new ItemStack(ItemRegistry.LMB,1)));
-        public static final List<ItemStack> INCANDESCENT_ALLOY = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.INCANDESCENT_INGOT,2),new ItemStack(Blocks.MAGMA,1),new ItemStack(ItemRegistry.INCANDESCENT_ALLOY,1),new ItemStack(ItemRegistry.LMB,1)));
-        public static final List<ItemStack> MIXED_GOLD = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.CRUDE_GOLD,2),new ItemStack(ItemRegistry.ORIROCK,1),new ItemStack(ItemRegistry.MIXED_GOLD,1),new ItemStack(ItemRegistry.LMB,1)));
-        public static final List<ItemStack> CARBON = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.ORICOAL_ORE,2),new ItemStack(Blocks.GRAVEL,1),new ItemStack(ItemRegistry.CARBON,1),new ItemStack(ItemRegistry.LMB,1)));
-        public static final List<ItemStack> GRINDSTONE = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.GRINDSTONE_SHARD,3),new ItemStack(Blocks.STONE,1),new ItemStack(ItemRegistry.GRINDSTONE,1,2),new ItemStack(ItemRegistry.LMB,1)));
-        public static final List<ItemStack> FAT = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(Items.MILK_BUCKET),new ItemStack(ItemRegistry.ORI_KETONE),new ItemStack(ItemRegistry.FAT),new ItemStack(ItemRegistry.LMB,1)));
-        public static final List<ItemStack> RMAY = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.RMA_SHARD,3),new ItemStack(ItemRegistry.DRIPSTONE_SHARD,1),new ItemStack(ItemRegistry.FAT),new ItemStack(ItemRegistry.LMB,1)));
-        public static final List<ItemStack> ESTER = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.ORI_ESTER,3),new ItemStack(Blocks.GLASS,1),new ItemStack(ItemRegistry.ESTER),new ItemStack(ItemRegistry.LMB,1)));
-        public static final List<ItemStack> DIKETONE = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.ORI_KETONE,3),new ItemStack(Blocks.GLASS,1),new ItemStack(ItemRegistry.DIKETON),new ItemStack(ItemRegistry.LMB,1)));
-        public static final List<ItemStack> KOHL = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.ORI_KOHL,3),new ItemStack(Blocks.GLASS,1),new ItemStack(ItemRegistry.LOXIC_KOHL),new ItemStack(ItemRegistry.LMB,1)));
-        public static final List<ItemStack> ORI_ESTER_A = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.HUGE_LEAF,3),new ItemStack(Items.DYE,1,2),new ItemStack(ItemRegistry.ORI_ESTER),new ItemStack(ItemRegistry.LMB,1)));
-        public static final List<ItemStack> ORI_ESTER_B = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.TEA,3),new ItemStack(Items.DYE,1,2),new ItemStack(ItemRegistry.ORI_ESTER),new ItemStack(ItemRegistry.LMB,1)));
-        public static final List<ItemStack> ORI_KOHL_A = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(Items.WHEAT_SEEDS,6),ItemStack.EMPTY,new ItemStack(ItemRegistry.ORI_KOHL),new ItemStack(ItemRegistry.LMB,1)));
-        public static final List<ItemStack> ORI_KOHL_B = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(Items.POTATO,3),ItemStack.EMPTY,new ItemStack(ItemRegistry.ORI_KOHL),new ItemStack(ItemRegistry.LMB,1)));
-        public static final List<ItemStack> ORI_GEL = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(ItemRegistry.IBERIA_STEM,3),new ItemStack(Items.SLIME_BALL,1),new ItemStack(ItemRegistry.GEL),new ItemStack(ItemRegistry.LMB,1)));
-        public static final List<ItemStack> FERTILE_DIRT = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(Blocks.DIRT),new ItemStack(Blocks.BONE_BLOCK),new ItemStack(ItemRegistry.FERTILE_DIRT),new ItemStack(ItemRegistry.LMB,1)));
-        public static final List<ItemStack> SKILL_SUMMARY_I = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(Items.BOOK),new ItemStack(ItemRegistry.FILM,2),new ItemStack(ItemRegistry.SKILL_SUMMARY_I),new ItemStack(ItemRegistry.LMB,1)));
-        public static final List<ItemStack> SKILL_SUMMARY_II = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(Items.BOOK),new ItemStack(ItemRegistry.FILM,4),new ItemStack(ItemRegistry.SKILL_SUMMARY_II),new ItemStack(ItemRegistry.LMB,1)));
-        public static final List<ItemStack> SKILL_SUMMARY_III = new ArrayList<ItemStack>(Arrays.asList(new ItemStack(Items.BOOK),new ItemStack(ItemRegistry.FILM,6),new ItemStack(ItemRegistry.SKILL_SUMMARY_III),new ItemStack(ItemRegistry.LMB,1)));
-
-        public static final List<List<ItemStack>> CRAFTING_TABLE = new ArrayList<>(Arrays.asList(DRILL_BATTLE_RECORD,
-                FRONTLINE_BATTLE_RECORD,TACTICAL_BATTLE_RECORD,PURE_GOLD,VANGUARD_DUALCHIP,GUARD_DUALCHIP,DEFENDER_DUALCHIP,
-                SNIPER_DUALCHIP,CASTER_DUALCHIP,MEDIC_DUALCHIP,SUPPORTER_DUALCHIP,SPECIALIST_DUALCHIP,LEVEL1,LEVEL2,LEVEL3,MANGANESE_ORE,
-                INCANDESCENT_ALLOY,MIXED_GOLD,CARBON,GRINDSTONE,FAT,RMAY,ESTER,DIKETONE,KOHL,ORI_ESTER_A,ORI_KOHL_A,ORI_KOHL_B,ORI_ESTER_B,
-                ORI_GEL,FERTILE_DIRT,SKILL_SUMMARY_I,SKILL_SUMMARY_II,SKILL_SUMMARY_III));
 
         public TileManufacturingStation()
         {
@@ -201,7 +160,8 @@ public class BlockManufacturingStation extends BlockMachine
 
                 if (getCountdown() == 0 && stack != 0)
                 {
-                    slot.insertItem(2, CRAFTING_TABLE.get(stack - 1).get(2), false);
+                    ItemStack sta = RecipeTable.MANUFACTURING_RECIPE.get(stack - 1).get(2).copy();
+                    slot.insertItem(2, sta, false);
                     setStack(0);
                 }
 
@@ -213,7 +173,7 @@ public class BlockManufacturingStation extends BlockMachine
 
                 if ((slot.getStackInSlot(0) != ItemStack.EMPTY || slot.getStackInSlot(1) != ItemStack.EMPTY) && getCountdown() == 0)
                 {
-                    for (List<ItemStack> s : CRAFTING_TABLE)
+                    for (List<ItemStack> s : RecipeTable.MANUFACTURING_RECIPE)
                     {
                         List<ItemStack> table = s.subList(0, s.size() - 2);
 
@@ -273,7 +233,7 @@ public class BlockManufacturingStation extends BlockMachine
 
                                         setCountdown(getTotalTime());
 
-                                        stack = CRAFTING_TABLE.indexOf(s) + 1;
+                                        stack = RecipeTable.MANUFACTURING_RECIPE.indexOf(s) + 1;
 
                                         break;
                                     }

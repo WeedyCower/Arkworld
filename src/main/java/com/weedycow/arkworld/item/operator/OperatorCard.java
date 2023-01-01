@@ -39,6 +39,7 @@ public abstract class OperatorCard extends NormalItem
         if (stack.hasCapability(CapabilityRegistry.capOperatorCard, null))
         {
             CapabilityOperatorCard card = stack.getCapability(CapabilityRegistry.capOperatorCard, null);
+
             if(!card.isClear())
             {
                 if(card.getMaster()!=null && !Objects.equals(card.getMaster(), "") && worldIn!=null && worldIn.getPlayerEntityByName(card.getMaster())!=null)
@@ -80,12 +81,11 @@ public abstract class OperatorCard extends NormalItem
             Entity target = ((PlayerInteractEvent.EntityInteract) event).getTarget();
             ItemStack stack = entity.getHeldItem(EnumHand.MAIN_HAND);
 
-            if(entity instanceof EntityPlayer && target instanceof Operator && ((Operator) target).getMaster()==entity)
+            if(entity instanceof EntityPlayer && target instanceof Operator && ((Operator) target).getMaster()==entity && !entity.world.isRemote)
             {
                 if(!(stack.getItem() instanceof OperatorCard))
                 {
-                    if(!entity.world.isRemote)
-                        ((EntityPlayer) entity).openGui(Arkworld.instance, 1, entity.world, target.getEntityId(), 0, 0);
+                    ((EntityPlayer) entity).openGui(Arkworld.instance, 1, entity.world, target.getEntityId(), 0, 0);
                 }
 
                 if(stack.hasCapability(CapabilityRegistry.capOperatorCard,null))
@@ -127,6 +127,8 @@ public abstract class OperatorCard extends NormalItem
                         card.setMood(((Operator) target).getMood());
 
                         card.setTrainTime(((Operator) target).getTrainTime());
+
+                        card.setUuid(((Operator) target).getUuid());
 
                         if(((Operator) target).getMaster()!=null)
                             card.setMaster(((Operator) target).getMaster().getName());

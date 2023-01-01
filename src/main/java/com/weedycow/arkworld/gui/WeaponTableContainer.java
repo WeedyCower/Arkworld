@@ -81,8 +81,12 @@ public class WeaponTableContainer extends Container implements IButton
 
             if (index < 36)
             {
-                if (!this.mergeItemStack(itemstack1, 36, this.inventorySlots.size(), true))
+                if (!this.mergeItemStack(itemstack1, 36, 37, true))
                 {
+                    if (!this.mergeItemStack(itemstack1, 37, 38, true))
+                    {
+                        return ItemStack.EMPTY;
+                    }
                     return ItemStack.EMPTY;
                 }
             }
@@ -100,6 +104,7 @@ public class WeaponTableContainer extends Container implements IButton
                 slot.onSlotChanged();
             }
         }
+
         return itemstack;
     }
 

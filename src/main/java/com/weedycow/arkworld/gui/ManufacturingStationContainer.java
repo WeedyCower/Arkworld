@@ -82,6 +82,19 @@ public class ManufacturingStationContainer extends Container implements IButton
 
             if (index < 36)
             {
+                if (!this.mergeItemStack(itemstack1, 36, 37, true))
+                {
+                    if (!this.mergeItemStack(itemstack1, 37, 38, true))
+                    {
+                        if (!this.mergeItemStack(itemstack1, 38, 39, true))
+                        {
+                            return ItemStack.EMPTY;
+                        }
+                        return ItemStack.EMPTY;
+                    }
+                    return ItemStack.EMPTY;
+                }
+
                 if (!this.mergeItemStack(itemstack1, 36, this.inventorySlots.size(), true))
                 {
                     return ItemStack.EMPTY;

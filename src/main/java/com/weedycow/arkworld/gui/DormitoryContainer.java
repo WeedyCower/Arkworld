@@ -63,7 +63,7 @@ public class DormitoryContainer extends Container
 
             if (index < 36)
             {
-                if (!this.mergeItemStack(itemstack1, 36, this.inventorySlots.size(), true))
+                if (!this.mergeItemStack(itemstack1, 36, 37, true))
                 {
                     return ItemStack.EMPTY;
                 }
@@ -82,6 +82,7 @@ public class DormitoryContainer extends Container
                 slot.onSlotChanged();
             }
         }
+
         return itemstack;
     }
 }

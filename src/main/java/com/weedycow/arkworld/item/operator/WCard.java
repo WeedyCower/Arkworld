@@ -77,20 +77,20 @@ public class WCard extends OperatorCard
                     ow.rotationYawHead = ow.rotationYaw;
                     ow.renderYawOffset = ow.rotationYaw;
 
-                    if(sam.getSam()>=ow.getDeployPoint() && !worldIn.isRemote)
+                    if(sam.getSam()>=ow.getDeployPoint())
                     {
-                        if (worldIn.spawnEntity(ow))
+                        if (!worldIn.isRemote && worldIn.spawnEntity(ow))
                         {
                             ow.onInitialSpawn(worldIn.getDifficultyForLocation(new BlockPos(ow)), null);
 
                             card.setClear(true);
 
-                            card.setUuid(ow.getUuid());
+                            ow.setUuid(card.getUuid());
 
                             sam.reduceSam(ow.getDeployPoint());
                         }
                     }
-                    else
+                    else if(worldIn.isRemote)
                     {
                         TextComponentString text = new TextComponentString(I18n.format("item.arkworld.info.deployPoint")+ow.getDeployPoint());
                         playerIn.sendMessage(text);

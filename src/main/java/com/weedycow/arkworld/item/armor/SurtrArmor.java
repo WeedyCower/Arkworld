@@ -126,7 +126,7 @@ public class SurtrArmor extends ArkArmor
             if (state.getStates().contains(EnumState.BURNING_BREATH))
             {
                 if (new Random().nextInt(3) == 0)
-                    state.addFunctionOnlyTick(EnumState.NERVE_INJURY, CapabilityState.Process.getTick(state.state, EnumState.BURNING_BREATH)/2);
+                    state.addFunctionOnlyTick(EnumState.NERVE_INJURY, state.getTick(EnumState.BURNING_BREATH)/2);
             }
             event.setCanceled(event.getSource().isFireDamage());
         }

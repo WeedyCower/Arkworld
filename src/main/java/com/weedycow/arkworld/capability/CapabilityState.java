@@ -199,12 +199,12 @@ public class CapabilityState implements INBTSerializable<NBTTagCompound>
                 this.moveSpeedPause = new AttributeModifier(UUID.fromString("53a7f6a1-11f2-40cc-9590-54584efe2112"), "move_speed_pause", -moveSpeed.getAttributeValue()/2, 0);
                 this.moveSpeedShackles = new AttributeModifier(UUID.fromString("67ef6762-6d37-4491-80c1-04055bc6c691"), "move_speed_shackles", -moveSpeed.getAttributeValue()*10, 0);
                 this.moveSpeedSleep = new AttributeModifier(UUID.fromString("ed35e207-86d6-4fdb-925f-42bfb7576510"), "move_speed_sleep", -moveSpeed.getAttributeValue()*10, 0);
-                this.moveSpeedInspire = new AttributeModifier(UUID.fromString("38b3c197-dabc-4d23-8de8-46a5eb924bf5"), "move_speed_inspire", moveSpeed.getAttributeValue()*getLevel(state,EnumState.INSPIRE)/10f, 0);
+                this.moveSpeedInspire = new AttributeModifier(UUID.fromString("38b3c197-dabc-4d23-8de8-46a5eb924bf5"), "move_speed_inspire", moveSpeed.getAttributeValue()*getLevel(EnumState.INSPIRE)/10f, 0);
             }
 
             if(attackDamage!=null)
             {
-                this.attackDamageInspire = new AttributeModifier(UUID.fromString("626c6e30-b5c3-4616-a4b8-2d279bf95544"), "attack_damage_inspire", attackDamage.getAttributeValue()*getLevel(state,EnumState.INSPIRE)/10f, 0);
+                this.attackDamageInspire = new AttributeModifier(UUID.fromString("626c6e30-b5c3-4616-a4b8-2d279bf95544"), "attack_damage_inspire", attackDamage.getAttributeValue()*getLevel(EnumState.INSPIRE)/10f, 0);
                 this.attackDamageEnergetic = new AttributeModifier(UUID.fromString("f17540fa-7f7c-4db8-bce0-8d2bc874c2a1"), "attack_damage_energetic", attackDamage.getAttributeValue()*(entity.getHealth()/entity.getHealth()), 0);
                 this.attackDamageTacticalOrder = new AttributeModifier(UUID.fromString("0b03fc82-6d15-ff9f-a09d-13e50ec7c028"), "attack_damage_tactical_order", tacticalOrderLevel * 0.2 * attackDamage.getAttributeValue(), 0);
                 this.attackDamageOriginiumStimulation = new AttributeModifier(UUID.fromString("4abf67cf-6731-4525-8607-3adaccf2f984"), "attack_damage_originium_stimulation", attackDamage.getAttributeValue() * 1.8, 0);
@@ -213,7 +213,7 @@ public class CapabilityState implements INBTSerializable<NBTTagCompound>
             if(defensivePower!=null)
             {
                 this.defensivePowerAddDefense = new AttributeModifier(UUID.fromString("92f5bf07-f048-4196-8582-e3e860d6630a"), "defensive_power_add_defense", -defensivePower.getAttributeValue()/2, 0);
-                this.defensivePowerInspire = new AttributeModifier(UUID.fromString("27b5fd58-b26a-4fef-bbad-67d4362cc077"), "defensive_power_inspire", defensivePower.getAttributeValue()*getLevel(state,EnumState.INSPIRE)/10f, 0);
+                this.defensivePowerInspire = new AttributeModifier(UUID.fromString("27b5fd58-b26a-4fef-bbad-67d4362cc077"), "defensive_power_inspire", defensivePower.getAttributeValue()*getLevel(EnumState.INSPIRE)/10f, 0);
                 this.defensivePowerReduceDefense = new AttributeModifier(UUID.fromString("f95deaf0-1adc-4853-8235-30864640b233"), "defensive_power_reduce_defense", -defensivePower.getAttributeValue()/2, 0);
                 this.defensivePowerTacticalOrder = new AttributeModifier(UUID.fromString("15bb7663-85fd-d06e-968a-f15bccd3b65d"), "defensive_power_tactical_order", tacticalOrderLevel * 10, 0);
                 this.defensivePowerWeUnite = new AttributeModifier(UUID.fromString("4954338a-75c1-4507-bdaf-939d11d2a346"), "defensive_power_we_union", defensivePower.getAttributeValue(), 0);
@@ -221,7 +221,7 @@ public class CapabilityState implements INBTSerializable<NBTTagCompound>
 
             if(attackInterval!=null)
             {
-                this.attackIntervalInspire = new AttributeModifier(UUID.fromString("1fcdf56c-a7b9-414d-899b-9ca7bb9473d9"), "attack_interval_inspire", -attackInterval.getAttributeValue()*getLevel(state,EnumState.INSPIRE)/10f, 0);
+                this.attackIntervalInspire = new AttributeModifier(UUID.fromString("1fcdf56c-a7b9-414d-899b-9ca7bb9473d9"), "attack_interval_inspire", -attackInterval.getAttributeValue()*getLevel(EnumState.INSPIRE)/10f, 0);
                 this.attackIntervalCold = new AttributeModifier(UUID.fromString("45631d2e-865c-44e9-abed-1a7bc7f3a0fe"), "attack_interval_cold", attackInterval.getAttributeValue(), 0);
                 this.attackIntervalFreeze = new AttributeModifier(UUID.fromString("97f621ef-d518-1370-cdce-f5099ae0c90f"), "attack_interval_freeze", attackInterval.getAttributeValue() * 10, 0);
                 this.attackIntervalVertigo = new AttributeModifier(UUID.fromString("6e0285a1-ea20-c621-a38b-13289353ef68"), "attack_interval_vertigo", attackInterval.getAttributeValue() * 10, 0);
@@ -234,24 +234,33 @@ public class CapabilityState implements INBTSerializable<NBTTagCompound>
             }
         }
 
-        public static int getLevel(CapabilityState state, EnumState sta)
+        public int getLevel(EnumState sta)
         {
-            for(EnumState s : state.getStates())
+            if(hasCapability && state.getStates()!=null)
             {
-                if(s==sta)
-                    return s.getLevel();
+                for (EnumState s : state.getStates())
+                {
+                    if (s == sta)
+                        return s.getLevel();
+                }
+                return 0;
             }
-            return 0;
+            else
+                return 0;
         }
 
-        public static int getTick(CapabilityState state, EnumState sta)
+        public int getTick(EnumState sta)
         {
-            for(EnumState s : state.getStates())
+            if(hasCapability && state.getStates()!=null)
             {
-                if(s==sta)
-                    return s.getTick();
+                for (EnumState s : state.getStates())
+                {
+                    if (s == sta)
+                        return s.getTick();
+                }
+                return 0;
             }
-            return 0;
+            else return 0;
         }
 
         public void addFunctionOnlyTick(EnumState s, int tick)
@@ -279,7 +288,7 @@ public class CapabilityState implements INBTSerializable<NBTTagCompound>
                     if(!state.getStates().contains(EnumState.NERVE_INJURY))
                         state.addState(s.getLevelTickState(10+level,tick));
                     else if(s.getLevel()<50+10)
-                        state.addState(s.getLevelTickState(getLevel(state,s)+level,tick));
+                        state.addState(s.getLevelTickState(getLevel(s)+level,tick));
                 }
 
                 if (s == EnumState.COLD)
@@ -382,7 +391,7 @@ public class CapabilityState implements INBTSerializable<NBTTagCompound>
             {
                 if(state.getStates().contains(EnumState.NERVE_INJURY))
                 {
-                    if(getLevel(state,EnumState.NERVE_INJURY)>=50+10)
+                    if(getLevel(EnumState.NERVE_INJURY)>=50+10)
                     {
                         removeState(EnumState.NERVE_INJURY);
                         entity.attackEntityFrom(DamageSource.GENERIC, 50);
@@ -616,10 +625,10 @@ public class CapabilityState implements INBTSerializable<NBTTagCompound>
 
         public void onD12()
         {
-            if(hasCapability && state.getStates().contains(EnumState.D12) && getTick(state,EnumState.D12)==1)
+            if(hasCapability && state.getStates().contains(EnumState.D12) && getTick(EnumState.D12)==1)
             {
                 entity.playSound(SoundRegistry.W_EXPLODE,1,1);
-                entity.world.createExplosion(null,entity.posX,entity.posY,entity.posZ,getLevel(state,EnumState.D12)/7f,false);
+                entity.world.createExplosion(null,entity.posX,entity.posY,entity.posZ,getLevel(EnumState.D12)/7f,false);
             }
         }
 
@@ -657,9 +666,10 @@ public class CapabilityState implements INBTSerializable<NBTTagCompound>
 
             if (entity != null && entity.hasCapability(CapabilityRegistry.capState, null))
             {
-                CapabilityState stateEntity = entity.getCapability(CapabilityRegistry.capState, null);
-                if (stateEntity.getStates().contains(EnumState.SHELTER) && getLevel(stateEntity, EnumState.SHELTER) > 0)
-                    event.setAmount(event.getAmount() * (1 - getLevel(stateEntity, EnumState.SHELTER) / 10f));
+                CapabilityState.Process state = new Process(entity);
+
+                if (state.getStates().contains(EnumState.SHELTER) && state.getLevel( EnumState.SHELTER) > 0)
+                    event.setAmount(event.getAmount() * (1 - state.getLevel(EnumState.SHELTER) / 10f));
             }
         }
 

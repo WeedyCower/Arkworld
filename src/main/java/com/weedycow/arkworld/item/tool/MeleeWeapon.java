@@ -411,16 +411,16 @@ public abstract class MeleeWeapon extends Item implements IAnimatable, IRES
 
                     if(item.getRank(EnumEntry.KNOCKBACK)>0)
                     {
-                        if (weapon.getKnockbackLevel()+item.getRank(EnumEntry.KNOCKBACK) > 0 && (weapon.getKnockbackLevel()+item.getRank(EnumEntry.KNOCKBACK))*(CapabilityState.Process.getLevel(attackerState.state,EnumState.PUSH)>0 ? 1.5 :1) >= target.getEntityAttribute(SharedMonsterAttributes.KNOCKBACK_RESISTANCE).getAttributeValue())
+                        if (weapon.getKnockbackLevel()+item.getRank(EnumEntry.KNOCKBACK) > 0 && (weapon.getKnockbackLevel()+item.getRank(EnumEntry.KNOCKBACK))*(attackerState.getLevel(EnumState.PUSH)>0 ? 1.5 :1) >= target.getEntityAttribute(SharedMonsterAttributes.KNOCKBACK_RESISTANCE).getAttributeValue())
                         {
-                            target.knockBack(attacker, (float) ((weapon.getKnockbackLevel() +item.getRank(EnumEntry.KNOCKBACK))*(CapabilityState.Process.getLevel(attackerState.state,EnumState.PUSH)>0 ? 1.5 :1) - target.getEntityAttribute(SharedMonsterAttributes.KNOCKBACK_RESISTANCE).getAttributeValue()), MathHelper.sin(attacker.rotationYaw * 0.017453292F), -MathHelper.cos(attacker.rotationYaw * 0.017453292F));
+                            target.knockBack(attacker, (float) ((weapon.getKnockbackLevel() +item.getRank(EnumEntry.KNOCKBACK))*(attackerState.getLevel(EnumState.PUSH)>0 ? 1.5 :1) - target.getEntityAttribute(SharedMonsterAttributes.KNOCKBACK_RESISTANCE).getAttributeValue()), MathHelper.sin(attacker.rotationYaw * 0.017453292F), -MathHelper.cos(attacker.rotationYaw * 0.017453292F));
                         }
                     }
                     else
                     {
-                        if (weapon.getKnockbackLevel() > 0 && weapon.getKnockbackLevel()*(CapabilityState.Process.getLevel(attackerState.state,EnumState.PUSH)>0 ? 1.5 :1) >= target.getEntityAttribute(SharedMonsterAttributes.KNOCKBACK_RESISTANCE).getAttributeValue())
+                        if (weapon.getKnockbackLevel() > 0 && weapon.getKnockbackLevel()*(attackerState.getLevel(EnumState.PUSH)>0 ? 1.5 :1) >= target.getEntityAttribute(SharedMonsterAttributes.KNOCKBACK_RESISTANCE).getAttributeValue())
                         {
-                            target.knockBack(attacker, (float) (weapon.getKnockbackLevel()*(CapabilityState.Process.getLevel(attackerState.state,EnumState.PUSH)>0 ? 1.5 :1) - target.getEntityAttribute(SharedMonsterAttributes.KNOCKBACK_RESISTANCE).getAttributeValue()), MathHelper.sin(attacker.rotationYaw * 0.017453292F), -MathHelper.cos(attacker.rotationYaw * 0.017453292F));
+                            target.knockBack(attacker, (float) (weapon.getKnockbackLevel()*(attackerState.getLevel(EnumState.PUSH)>0 ? 1.5 :1) - target.getEntityAttribute(SharedMonsterAttributes.KNOCKBACK_RESISTANCE).getAttributeValue()), MathHelper.sin(attacker.rotationYaw * 0.017453292F), -MathHelper.cos(attacker.rotationYaw * 0.017453292F));
                         }
                     }
 

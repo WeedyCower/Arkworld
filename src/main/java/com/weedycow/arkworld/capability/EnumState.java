@@ -39,8 +39,8 @@ public enum EnumState
     PUSH(37);
 
     private final int value;
-    private int tick;
-    private int level;
+    private int tick = 0;
+    private int level = 0;
 
     EnumState(int value)
     {

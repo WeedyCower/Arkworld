@@ -94,10 +94,10 @@ public class PocketSeaCrawlerArmor extends ArkArmor
         if (flag && entity.hasCapability(CapabilityRegistry.capState, null))
         {
             CapabilityState.Process state = new CapabilityState.Process(entity);
-            if (state.getStates().contains(EnumState.NERVE_INJURY) && CapabilityState.Process.getLevel(state.state, EnumState.NERVE_INJURY) < 50 + 10)
+            if (state.getStates().contains(EnumState.NERVE_INJURY) && state.getLevel( EnumState.NERVE_INJURY) < 50 + 10)
             {
                 if (entity.ticksExisted % 20 == 0 && new Random().nextInt(10) == 0)
-                    state.addFunctionOnlyLevel(EnumState.NERVE_INJURY, CapabilityState.Process.getLevel(state.state, EnumState.NERVE_INJURY) - 1);
+                    state.addFunctionOnlyLevel(EnumState.NERVE_INJURY, state.getLevel( EnumState.NERVE_INJURY) - 1);
                 if (entity.ticksExisted % 20 == 0)
                     entity.addPotionEffect(new PotionEffect(MobEffects.WATER_BREATHING, 20));
             }

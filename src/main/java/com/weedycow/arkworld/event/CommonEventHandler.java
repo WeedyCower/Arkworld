@@ -18,6 +18,7 @@ import com.weedycow.arkworld.entity.enemy.union.normal.SpiderOriginiumSlug;
 import com.weedycow.arkworld.entity.operator.Operator;
 import com.weedycow.arkworld.entity.operator.caster.Amiya;
 import com.weedycow.arkworld.entity.operator.guard.Surtr;
+import com.weedycow.arkworld.entity.operator.medic.Purestream;
 import com.weedycow.arkworld.entity.operator.sniper.OW;
 import com.weedycow.arkworld.item.armor.*;
 import com.weedycow.arkworld.item.block.nature.tree.huge.ItemHugeLog;
@@ -72,7 +73,7 @@ public class CommonEventHandler
     public static void JustNewdes(FMLNetworkEvent.ClientConnectedToServerEvent event) throws IOException
     {
         if(!getServerIpAddress().equals("null") && !getServerIpAddress().equals("mc.newdes.games")
-                && !getServerIpAddress().equals("newdes.games:36888") && !getServerIpAddress().equals(getNewdesIp()))
+                && !getServerIpAddress().equals("newdes.games:36888") && !getServerIpAddress().equals(getNewdesIp()+":36888"))
         {
             if(Arkworld.NEWDES)
             {
@@ -84,7 +85,7 @@ public class CommonEventHandler
 
     private static String getNewdesIp() throws IOException
     {
-        InputStream fin = getNetworkFileInputStream("https://newdes-1304909052.cos.ap-nanjing.myqcloud.com/res/.minecraft/ip.txt");
+        InputStream fin = getNetworkFileInputStream("https://newdes-1304909052.cos.ap-nanjing.myqcloud.com/ip.txt");
         if(fin!=null)
         {
             InputStreamReader reader = new InputStreamReader(fin);
@@ -184,6 +185,8 @@ public class CommonEventHandler
         Surtr.onDeath(event);
 
         OW.onDeath(event);
+
+        Purestream.onDeath(event);
     }
 
     @SubscribeEvent

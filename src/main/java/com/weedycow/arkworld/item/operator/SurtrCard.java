@@ -57,7 +57,7 @@ public class SurtrCard extends OperatorCard
                     if (card.getUuid() != null && !worldIn.isRemote)
                     {
                         Entity entity = ArkEntityUtil.getOperator(worldIn, card.getUuid());
-                        if (entity instanceof Surtr && card.isClear() && playerIn == ((Surtr) entity).getMaster())
+                        if (entity instanceof Surtr && card.isClear() && playerIn==((Surtr) entity).getMaster())
                         {
                             ((Surtr) entity).setSkillStartup(2);
                             ((Surtr) entity).playFightingSound();
@@ -92,19 +92,20 @@ public class SurtrCard extends OperatorCard
                         surtr.rotationYawHead = surtr.rotationYaw;
                         surtr.renderYawOffset = surtr.rotationYaw;
 
-                        if (sam.getSam() >= surtr.getDeployPoint() && !worldIn.isRemote)
+                        if (sam.getSam() >= surtr.getDeployPoint())
                         {
-                            if (worldIn.spawnEntity(surtr))
+                            if (!worldIn.isRemote && worldIn.spawnEntity(surtr))
                             {
                                 surtr.onInitialSpawn(worldIn.getDifficultyForLocation(new BlockPos(surtr)), null);
 
                                 card.setClear(true);
 
-                                card.setUuid(surtr.getUuid());
+                                surtr.setUuid(card.getUuid());
 
                                 sam.reduceSam(surtr.getDeployPoint());
                             }
-                        } else
+                        }
+                        else if(worldIn.isRemote)
                         {
                             TextComponentString text = new TextComponentString(I18n.format("item.arkworld.info.deployPoint") + surtr.getDeployPoint());
                             playerIn.sendMessage(text);

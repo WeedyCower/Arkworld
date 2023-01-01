@@ -79,10 +79,10 @@ public class BasinSeaReaperArmor extends ArkArmor
         if (flag && entity.hasCapability(CapabilityRegistry.capState, null))
         {
             CapabilityState.Process state = new CapabilityState.Process(entity);
-            if (state.getStates().contains(EnumState.NERVE_INJURY) && CapabilityState.Process.getLevel(state.state, EnumState.NERVE_INJURY) < 50 + 10)
+            if (state.getStates().contains(EnumState.NERVE_INJURY) && state.getLevel( EnumState.NERVE_INJURY) < 50 + 10)
             {
                 if (new Random().nextInt(3) == 0)
-                    state.addFunctionOnlyLevel(EnumState.NERVE_INJURY, CapabilityState.Process.getLevel(state.state, EnumState.NERVE_INJURY) - 1);
+                    state.addFunctionOnlyLevel(EnumState.NERVE_INJURY, state.getLevel( EnumState.NERVE_INJURY) - 1);
                 if (new Random().nextInt(100) < 5)
                     state.removeState(EnumState.NERVE_INJURY);
             }

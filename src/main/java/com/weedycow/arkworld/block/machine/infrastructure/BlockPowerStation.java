@@ -1,6 +1,7 @@
 package com.weedycow.arkworld.block.machine.infrastructure;
 
 import com.weedycow.arkworld.Arkworld;
+import com.weedycow.arkworld.RecipeTable;
 import com.weedycow.arkworld.entity.operator.Operator;
 import com.weedycow.arkworld.item.material.infrastructure.ConcreteBuildingMaterial;
 import com.weedycow.arkworld.item.material.infrastructure.LightBuildingMaterial;
@@ -36,8 +37,6 @@ import software.bernie.geckolib3.core.manager.AnimationData;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
@@ -82,8 +81,7 @@ public class BlockPowerStation extends BlockMachine
         int stack;
         float chargingAdd;
         float timeAdd;
-        protected ItemStackHandler slot = new ItemStackHandler(2);
-        List<ItemStack> stacks = new ArrayList<>(Arrays.asList(new ItemStack(ItemRegistry.ORIROCK,1)));
+        private final ItemStackHandler slot = new ItemStackHandler(2);
         AnimationController<TilePowerStation> controllerIdle = new AnimationController<>(this, "idle", 1, this::PlayState);
 
         public TilePowerStation()
@@ -138,13 +136,14 @@ public class BlockPowerStation extends BlockMachine
 
                 if (getCountdown() == 0 && stack != 0)
                 {
-                    slot.insertItem(1, stacks.get(stack - 1), false);
+                    ItemStack sta = RecipeTable.POWER_STATION_RECIPE.get(stack - 1).copy();
+                    slot.insertItem(1, sta, false);
                     setStack(0);
                 }
 
                 if (input.getItem() instanceof Oricoal && getCountdown() == 0)
                 {
-                    if (input.getCount() >= 1)
+                    if (input.getCount() >= 1 && getLevel()>0)
                     {
                         setStack(1);
 
@@ -254,7 +253,6 @@ public class BlockPowerStation extends BlockMachine
             else
                 setPowerProduction(0);
         }
-
         @Override
         public boolean hasCapability(@Nonnull Capability<?> capability, @Nullable EnumFacing facing)
         {
@@ -281,8 +279,6 @@ public class BlockPowerStation extends BlockMachine
         @Override
         public void readFromNBT(NBTTagCompound compound)
         {
-            super.readFromNBT(compound);
-
             slot.deserializeNBT(compound.getCompoundTag("Slot"));
 
             setCountdown(compound.getInteger("Countdown"));
@@ -296,13 +292,13 @@ public class BlockPowerStation extends BlockMachine
             setChargingAdd(compound.getInteger("ChargingAdd"));
 
             setTimeAdd(compound.getFloat("TimeAdd"));
+
+            super.readFromNBT(compound);
         }
 
         @Override
         public NBTTagCompound writeToNBT(NBTTagCompound compound)
         {
-            super.writeToNBT(compound);
-
             compound.setTag("Slot", slot.serializeNBT());
 
             compound.setInteger("Countdown",getCountdown());
@@ -317,7 +313,7 @@ public class BlockPowerStation extends BlockMachine
 
             compound.setFloat("TimeAdd",getTimeAdd());
 
-            return compound;
+            return super.writeToNBT(compound);
         }
 
         public float getRate()

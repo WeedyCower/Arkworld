@@ -109,14 +109,14 @@ public class FrostnovaArmor extends ArkArmor
             if (state.getStates().contains(EnumState.COLD))
             {
                 if (hasHead && new Random().nextInt(4) == 0)
-                    state.addFunctionOnlyTick(EnumState.COLD, (int) (CapabilityState.Process.getLevel(state.state, EnumState.COLD)*0.8));
+                    state.addFunctionOnlyTick(EnumState.COLD, (int) (state.getLevel( EnumState.COLD)*0.8));
                 if(hasChest && new Random().nextInt(2) == 0)
-                    state.addFunctionOnlyTick(EnumState.COLD, CapabilityState.Process.getLevel(state.state, EnumState.COLD)/2);
+                    state.addFunctionOnlyTick(EnumState.COLD, state.getLevel( EnumState.COLD)/2);
             }
             if(state.getStates().contains(EnumState.FREEZE))
             {
                 if(hasChest && new Random().nextInt(4) == 0)
-                    state.addFunctionOnlyTick(EnumState.FREEZE, CapabilityState.Process.getLevel(state.state, EnumState.FREEZE)/2);
+                    state.addFunctionOnlyTick(EnumState.FREEZE, state.getLevel( EnumState.FREEZE)/2);
             }
         }
     }

@@ -78,20 +78,20 @@ public class AmiyaCard extends OperatorCard
                     amiya.rotationYawHead = amiya.rotationYaw;
                     amiya.renderYawOffset = amiya.rotationYaw;
 
-                    if(sam.getSam()>=amiya.getDeployPoint() && !worldIn.isRemote)
+                    if(sam.getSam()>=amiya.getDeployPoint())
                     {
-                        if (worldIn.spawnEntity(amiya))
+                        if (!worldIn.isRemote && worldIn.spawnEntity(amiya))
                         {
                             amiya.onInitialSpawn(worldIn.getDifficultyForLocation(new BlockPos(amiya)), null);
 
                             card.setClear(true);
 
-                            card.setUuid(amiya.getUuid());
+                            amiya.setUuid(card.getUuid());
 
                             sam.reduceSam(amiya.getDeployPoint());
                         }
                     }
-                    else
+                    else if(worldIn.isRemote)
                     {
                         TextComponentString text = new TextComponentString(I18n.format("item.arkworld.info.deployPoint")+amiya.getDeployPoint());
                         playerIn.sendMessage(text);

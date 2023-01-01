@@ -51,48 +51,48 @@ public class PurestreamCard extends OperatorCard
 
                 if(card.getTimes()==0 && !card.isClear() && !worldIn.isRemote)
                 {
-                    Operator Purestream = new Purestream(worldIn).getOperator(1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 24, 0, playerIn.getName());
-                    Purestream.setLocationAndAngles(event.getPos().getX() + 0.5, event.getPos().getY() + 0.5, event.getPos().getZ() + 0.5, MathHelper.wrapDegrees(worldIn.rand.nextFloat() * 360.0F), 0.0F);
-                    Purestream.rotationYawHead = Purestream.rotationYaw;
-                    Purestream.renderYawOffset = Purestream.rotationYaw;
+                    Operator purestream = new Purestream(worldIn).getOperator(1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 24, 0, playerIn.getName());
+                    purestream.setLocationAndAngles(event.getPos().getX() + 0.5, event.getPos().getY() + 0.5, event.getPos().getZ() + 0.5, MathHelper.wrapDegrees(worldIn.rand.nextFloat() * 360.0F), 0.0F);
+                    purestream.rotationYawHead = purestream.rotationYaw;
+                    purestream.renderYawOffset = purestream.rotationYaw;
 
-                    if (worldIn.spawnEntity(Purestream))
+                    if (worldIn.spawnEntity(purestream))
                     {
-                        Purestream.onInitialSpawn(worldIn.getDifficultyForLocation(new BlockPos(Purestream)), null);
+                        purestream.onInitialSpawn(worldIn.getDifficultyForLocation(new BlockPos(purestream)), null);
 
-                        Purestream.setUuid(UUID.randomUUID().toString());
+                        purestream.setUuid(UUID.randomUUID().toString());
 
                         card.setClear(true);
 
-                        card.setUuid(Purestream.getUuid());
+                        card.setUuid(purestream.getUuid());
 
-                        sam.reduceSam(Purestream.getDeployPoint());
+                        sam.reduceSam(purestream.getDeployPoint());
                     }
                 }
 
                 if(card.getTimes()>0 && card.getMaster()!=null && !card.isClear() && card.getCountdown()==0)
                 {
-                    Operator Purestream = new Purestream(worldIn).getOperator(card.getLevel(), card.getExp(), card.getMoveMode(), card.getActionMode(), card.getTrust(), card.getSkillLevel(), card.getSkillFirRank(), card.getSkillSecRank(), card.getSkillThiRank(), card.getSelectSkill(), card.getElite(), card.getPotential(), card.getTimes(), card.getExistedTime(), card.getMood(), card.getTrainTime(), card.getMaster());
-                    Purestream.setLocationAndAngles(event.getPos().getX() + 0.5, event.getPos().getY() + 0.5, event.getPos().getZ() + 0.5, MathHelper.wrapDegrees(worldIn.rand.nextFloat() * 360.0F), 0.0F);
-                    Purestream.rotationYawHead = Purestream.rotationYaw;
-                    Purestream.renderYawOffset = Purestream.rotationYaw;
+                    Operator purestream = new Purestream(worldIn).getOperator(card.getLevel(), card.getExp(), card.getMoveMode(), card.getActionMode(), card.getTrust(), card.getSkillLevel(), card.getSkillFirRank(), card.getSkillSecRank(), card.getSkillThiRank(), card.getSelectSkill(), card.getElite(), card.getPotential(), card.getTimes(), card.getExistedTime(), card.getMood(), card.getTrainTime(), card.getMaster());
+                    purestream.setLocationAndAngles(event.getPos().getX() + 0.5, event.getPos().getY() + 0.5, event.getPos().getZ() + 0.5, MathHelper.wrapDegrees(worldIn.rand.nextFloat() * 360.0F), 0.0F);
+                    purestream.rotationYawHead = purestream.rotationYaw;
+                    purestream.renderYawOffset = purestream.rotationYaw;
 
-                    if(sam.getSam()>=Purestream.getDeployPoint() && !worldIn.isRemote)
+                    if(sam.getSam()>=purestream.getDeployPoint())
                     {
-                        if (worldIn.spawnEntity(Purestream))
+                        if (!worldIn.isRemote && worldIn.spawnEntity(purestream))
                         {
-                            Purestream.onInitialSpawn(worldIn.getDifficultyForLocation(new BlockPos(Purestream)), null);
+                            purestream.onInitialSpawn(worldIn.getDifficultyForLocation(new BlockPos(purestream)), null);
 
                             card.setClear(true);
 
-                            card.setUuid(Purestream.getUuid());
+                            purestream.setUuid(card.getUuid());
 
-                            sam.reduceSam(Purestream.getDeployPoint());
+                            sam.reduceSam(purestream.getDeployPoint());
                         }
                     }
-                    else
+                    else if(worldIn.isRemote)
                     {
-                        TextComponentString text = new TextComponentString(I18n.format("item.arkworld.info.deployPoint")+Purestream.getDeployPoint());
+                        TextComponentString text = new TextComponentString(I18n.format("item.arkworld.info.deployPoint")+purestream.getDeployPoint());
                         playerIn.sendMessage(text);
                     }
                 }

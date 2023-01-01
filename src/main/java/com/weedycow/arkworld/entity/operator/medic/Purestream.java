@@ -321,11 +321,11 @@ public class Purestream extends Operator
 
         if(entity instanceof Purestream)
         {
-            Purestream Purestream = (Purestream) entity;
+            Purestream purestream = (Purestream) entity;
 
-            if(Purestream.getMaster()!=null)
+            if(purestream.getMaster()!=null)
             {
-                ItemStack stack = ArkItemUtil.findItemStackInPlayerSlot(Purestream.getMaster(), PurestreamCard.class);
+                ItemStack stack = ArkItemUtil.findItemStackInPlayerSlot(purestream.getMaster(), PurestreamCard.class);
 
                 if(stack != ItemStack.EMPTY && stack.getItem() instanceof PurestreamCard)
                 {
@@ -333,42 +333,42 @@ public class Purestream extends Operator
                     {
                         CapabilityOperatorCard card = stack.getCapability(CapabilityRegistry.capOperatorCard, null);
 
-                        card.setLevel(Purestream.getLevel());
+                        card.setLevel(purestream.getLevel());
 
-                        card.setExp(Purestream.getExp());
+                        card.setExp(purestream.getExp());
 
-                        card.setMoveMode(Purestream.getMoveMode().getValue());
+                        card.setMoveMode(purestream.getMoveMode().getValue());
 
-                        card.setActionMode(Purestream.getActionMode().getValue());
+                        card.setActionMode(purestream.getActionMode().getValue());
 
-                        card.setTrust(Purestream.getTrust());
+                        card.setTrust(purestream.getTrust());
 
-                        card.setSkillLevel(Purestream.getSkillLevel());
+                        card.setSkillLevel(purestream.getSkillLevel());
 
-                        card.setSkillFirRank(Purestream.getSkillFirRank());
+                        card.setSkillFirRank(purestream.getSkillFirRank());
 
-                        card.setSkillSecRank(Purestream.getSkillSecRank());
+                        card.setSkillSecRank(purestream.getSkillSecRank());
 
-                        card.setSkillThiRank(Purestream.getSkillThiRank());
+                        card.setSkillThiRank(purestream.getSkillThiRank());
 
-                        card.setSelectSkill(Purestream.getSelectSkill());
+                        card.setSelectSkill(purestream.getSelectSkill());
 
-                        card.setElite(Purestream.getElite());
+                        card.setElite(purestream.getElite());
 
-                        card.setPotential(Purestream.getPotential());
+                        card.setPotential(purestream.getPotential());
 
-                        card.setCountdown(Purestream.getRedeployTime());
+                        card.setCountdown(purestream.getRedeployTime());
 
-                        card.setTimes(Purestream.getTimes());
+                        card.setTimes(purestream.getTimes());
 
-                        card.setExistedTime(Purestream.getExistedTime());
+                        card.setExistedTime(purestream.getExistedTime());
 
-                        card.setMood(Purestream.getMood());
+                        card.setMood(purestream.getMood());
 
-                        card.setTrainTime(Purestream.getTrainTime());
+                        card.setTrainTime(purestream.getTrainTime());
 
-                        if (Purestream.getMaster() != null)
-                            card.setMaster(Purestream.getMaster().getName());
+                        if (purestream.getMaster() != null)
+                            card.setMaster(purestream.getMaster().getName());
 
                         card.setClear(false);
                     }
